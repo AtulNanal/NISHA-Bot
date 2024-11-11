@@ -1,0 +1,6 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement name="ContainerChat" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); height: 100%; flex-direction: column; justify-content: space-between; align-self: flex-end; width: 20%; -unity-text-align: upper-right;">
+        <ui:Label tabindex="-1" text="Label" display-tooltip-when-elided="true" name="LabelChat" style="background-color: rgba(183, 167, 255, 0); height: 50%; align-self: stretch; justify-content: space-between;" />
+        <ui:Button text="Button" display-tooltip-when-elided="true" name="ButtonLike" style="height: auto; align-self: stretch; justify-content: space-between;" />
+    </ui:VisualElement>
+</ui:UXML>

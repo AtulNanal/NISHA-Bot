@@ -1,2 +1,2 @@
 # NISHA-Bot
-Chat Bot for New Joiner Onboarding 
+Unity Engine based UI for Nisha --- Chat Bot for New Joiner Onboarding.
