@@ -6,6 +6,11 @@ using UnityEngine.UIElements;
 public class ChatWindowView
 {
     private VisualElement _root;
+    
+    public VisualElement Root
+    {
+        get { return _root; }
+    }
 
     private ScrollView _scrollViewRecentChats;
 
@@ -19,10 +24,14 @@ public class ChatWindowView
 
     private Button _buttonAttach;
 
-    public ChatWindowView(VisualElement root)
+    private ChatWindowController _controller;
+
+    public ChatWindowView(VisualElement root, ChatWindowController controller)
     {
         _root = root;
+        _controller = controller;
         QueryVisualElements();
+        RegisterEvents();
     }
 
     private void QueryVisualElements()
@@ -40,7 +49,23 @@ public class ChatWindowView
 
     private void RegisterEvents()
     {
-        
+        _buttonPost.clicked += PostButtonClicked;
+    }
+
+    private void UnRegisterEvents()
+    {
+        _buttonPost.clicked -= PostButtonClicked;
+    }
+
+    private void PostButtonClicked()
+    {
+        _controller.ChatWindowPostButtonClicked(_textFieldUserChat.value);
+        _textFieldUserChat.value = UITags.UITagsChatWindow.DefaultUserText;
+    }
+
+    public void AdduserChatMessageToScrollView(VisualElement visualElement)
+    {
+        _scrollViewRecentChats.Add(visualElement);
     }
 
 }
