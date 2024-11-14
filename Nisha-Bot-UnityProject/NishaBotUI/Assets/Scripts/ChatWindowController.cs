@@ -19,11 +19,22 @@ public class ChatWindowController
     public void ChatWindowPostButtonClicked(string userChatText)
     {
         Debug.Log("ChatWindowPostButtonClicked");
-        // Instantiate the UserChatMessage
+        // Instantiate the UserChatMessageContainer
         VisualTreeAsset userChatMessageAsset = Resources.Load("UXMLs/" + UITags.UITagsChatWindow.UserChatMessageContainerName) as VisualTreeAsset;
         VisualElement userChatMessageContainer = userChatMessageAsset.CloneTree();
         UserChatMessageController userChatMessageController = new UserChatMessageController(userChatMessageContainer);
         userChatMessageController.ConvertUserChatToChatMessage(userChatText);
         _chatWindowView.AdduserChatMessageToScrollView(userChatMessageController.VsElement);
+    }
+
+    public void BotResponseMessageReceived(string botReposeText)
+    {
+        Debug.Log("BotResponseMessageReceived");
+        VisualTreeAsset botChatMessageAsset = Resources.Load("UXMLs/" + UITags.UITagsChatWindow.BotChatMessageContainerName) as VisualTreeAsset;
+        VisualElement botChatMessageContainer = botChatMessageAsset.CloneTree();
+        BotChatMessageController botChatMessageController = new BotChatMessageController(botChatMessageContainer);
+        botChatMessageController.ConvertUserChatToChatMessage(botReposeText);
+        _chatWindowView.AdduserChatMessageToScrollView(botChatMessageController.VsElement);
+
     }
 }

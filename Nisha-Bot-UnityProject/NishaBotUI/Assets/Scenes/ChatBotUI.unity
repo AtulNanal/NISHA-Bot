@@ -152,7 +152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bfe4c9f7c597004f95d80fe077425e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _chatBotUIDocument: {fileID: 1704022269}
+  _chatBotUiDocument: {fileID: 1704022269}
 --- !u!4 &1197315824
 Transform:
   m_ObjectHideFlags: 0
