@@ -13,5 +13,12 @@ public static class UITags
         public const string ContainerUserInputButtons = "ContainerUserButtons";
         public const string ButtonPostChat = "ButtonPost";
         public const string ButtonPostAttach = "ButtonAttach";
+
+        public const string DefaultUserText = "Please Enter Your Query Here";
+
+        public const string UserChatMessageContainerName = "UserChatMessageContainer";
+        public const string BotChatMessageContainerName = "BotChatMessageContainer";
+
+        public const string LabelUserChatMessage = "LabelUserChatMessage";
     }
 }
