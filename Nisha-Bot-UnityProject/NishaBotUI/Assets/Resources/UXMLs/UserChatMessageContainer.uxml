@@ -1,0 +1,6 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement name="ContainerChat" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); height: auto; flex-direction: column; justify-content: space-between; align-self: flex-end; width: auto; -unity-text-align: upper-right; border-top-left-radius: 0; border-bottom-left-radius: 25px; text-overflow: ellipsis;">
+        <ui:Label tabindex="-1" text="Label" display-tooltip-when-elided="true" name="LabelUserChatMessage" style="background-color: rgb(183, 167, 255); height: 50%; align-self: flex-start; justify-content: space-between; width: 100%; color: rgb(255, 216, 175); font-size: 16px; -unity-font-style: normal; -unity-text-align: middle-right; border-top-left-radius: 25px; border-bottom-left-radius: 25px; -unity-background-scale-mode: stretch-to-fill; flex-wrap: nowrap; white-space: normal;" />
+        <ui:VisualElement name="ContainerEmptySpace" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); height: 50px;" />
+    </ui:VisualElement>
+</ui:UXML>
