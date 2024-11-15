@@ -1,0 +1,641 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hey",
+        "How are you",
+        "Is anyone there?",
+        "Hello",
+        "Good day"
+      ],
+      "responses": [
+        "Hello, How can I help?",
+        "Hi there, what can I do for you?",
+        "Hi there, how can I help?"
+      ]
+    },
+    {
+      "tag": "introduction",
+      "patterns": [
+        "Who are you?", 
+        "What are you?", 
+        "Who am I talking with?"
+      ],
+      "responses": [
+        "I am NISHA or Newcomers Integration, Support and Help Assistant. I am here to help you with any topics related to your onboarding journey",
+        "My name is Nisha. I am a chatbot that helps new joiners to navigate through various onboarding steps at our organization",
+        "I am a chatbot called as Nisha. I am designed to resolve your queries related to onboarding and company policies"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye"],
+      "responses": [
+        "See you later, thanks for visiting",
+        "Have a nice day",
+        "Bye! Come back again soon."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
+      "responses": ["Happy to help!", "Any time!", "My pleasure", "You are welcome!"]
+    },
+    {
+      "tag": "Onboarding",
+      "patterns": [
+        "Can you tell me something about onboarding process?",
+        "What is the onboarding process for new joiners?",
+        "Explain onboarding process",
+        "Describe the onboarding process",
+        "How does the onboarding process work?",
+        "What are the steps in the onboarding process?",
+        "What should I expect during onboarding?",
+        "Can you explain the onboarding steps?",
+        "What happens during onboarding?",
+        "How is the onboarding process structured?"
+      ],
+      "responses": [
+          "Surely, the onboarding process consists of 3 main steps - Induction, Probation, and Department Allocation. Probation further consists of training and assessments, that span over a period of 6 months here at PowerWork.",
+          "Onboarding process at PowerWork involves Probation wherein post induction the new-joiners undergo training in their respective domain and have to qualify assessments to pass probation. Once passed, they are allocated to different departments in PowerWork.",
+          "The onboarding process at PowerWork includes Induction, Probation, and Department Allocation. During Probation, new joiners receive training and undergo assessments over a 6-month period.",
+          "At PowerWork, the onboarding process is divided into three main phases: Induction, Probation, and Department Allocation. Probation includes training and assessments that last for 6 months.",
+          "Our onboarding process at PowerWork is designed to integrate new joiners through Induction, Probation, and Department Allocation. Probation involves comprehensive training and assessments over six months."
+      ]
+    },
+    {
+      "tag": "induction",
+      "patterns": [
+        "Tell me about the induction process",
+        "What happens during induction?",
+        "Induction details",
+        "Describe the induction process",
+        "What is included in the induction process?",
+        "How does the induction process work?",
+        "Can you explain the induction process?",
+        "What should I expect during induction?",
+        "What is the purpose of the induction process?",
+        "How long is the induction process?"
+      ],
+      "responses": [
+        "The induction process at PowerWork is a half-day session aimed at familiarizing new joiners with the company's culture, policies, and key people. It includes an introduction to company values, policies, health & safety protocols, and an office tour.",
+        "During the induction process at PowerWork, new joiners are introduced to the company's culture, policies, and key personnel. The session lasts for half a day and includes an office tour.",
+        "Induction at PowerWork is a half-day session that covers company values, policies, health & safety protocols, and an introduction to key people. It helps new joiners get acquainted with the company.",
+        "The induction process at PowerWork involves a half-day session where new joiners learn about the company's culture, policies, and key individuals. It also includes an office tour and health & safety briefing.",
+        "At PowerWork, the induction process is designed to introduce new joiners to the company's culture, policies, and key personnel. This half-day session includes an overview of company values, health & safety protocols, and an office tour."
+      ]
+    },
+    {
+      "tag": "probation_period",
+      "patterns": [
+        "What is the probation period?",
+        "How long is the probation period?",
+        "Probation period details",
+        "Can you explain the probation period?",
+        "What happens during the probation period?",
+        "Duration of the probation period",
+        "How does the probation period work?",
+        "What is the length of the probation period?",
+        "Probation period information",
+        "Details about the probation period"
+      ],
+      "responses": [
+        "The probation period at PowerWork lasts for six months from the date of joining. During this time, new joiners undergo monthly performance reviews with feedback from team leads and HR. Confirmation of employment is based on satisfactory performance throughout the probation.",
+        "At PowerWork, the probation period is six months long. New joiners receive monthly performance reviews and feedback from team leads and HR. Employment confirmation depends on satisfactory performance during this period.",
+        "PowerWork's probation period spans six months from the joining date. It includes monthly performance reviews with feedback from team leads and HR. Successful completion of probation is required for employment confirmation.",
+        "The six-month probation period at PowerWork involves monthly performance reviews and feedback from team leads and HR. Employment confirmation is contingent on satisfactory performance throughout this period.",
+        "During the six-month probation period at PowerWork, new joiners undergo monthly performance reviews with feedback from team leads and HR. Employment is confirmed based on satisfactory performance during probation."
+      ]
+    }, {
+      "tag": "training",
+      "patterns": [
+        "Tell me about the training",
+        "What training is provided?",
+        "Training details",
+        "Can you explain the training process?",
+        "What kind of training do new joiners receive?",
+        "Details about the training program",
+        "What training sessions are available?",
+        "Describe the training process",
+        "What does the training include?",
+        "How is the training structured?"
+      ],
+      "responses": [
+        "PowerWork provides initial role-specific training sessions in the first week, followed by ongoing skill-based training modules throughout the probation period. The training includes both technical training and soft skills training to equip new joiners with the necessary skills to excel in their roles.",
+        "The training at PowerWork includes initial role-specific sessions in the first week and ongoing skill-based modules throughout the probation period. It covers both technical training and soft skills training to ensure new joiners are well-prepared for their roles.",
+        "At PowerWork, new joiners receive initial role-specific training in the first week, followed by continuous skill-based training modules during the probation period. The training program includes technical training and soft skills training.",
+        "PowerWork's training program consists of initial role-specific sessions in the first week and ongoing skill-based modules throughout the probation period. It includes both technical training and soft skills training to help new joiners excel in their roles.",
+        "The training process at PowerWork involves initial role-specific sessions in the first week and continuous skill-based modules during the probation period. It includes technical training and soft skills training to equip new joiners with essential skills."
+      ]
+    },
+    {
+      "tag": "final_assessment",
+      "patterns": [
+        "What is the final assessment?",
+        "Final assessment details",
+        "How is the final assessment conducted?",
+        "Can you explain the final assessment?",
+        "What happens during the final assessment?",
+        "Details about the final assessment",
+        "How does the final assessment work?",
+        "What is evaluated in the final assessment?",
+        "Final assessment process",
+        "How is performance evaluated in the final assessment?"
+      ],
+      "responses": [
+        "The final assessment at PowerWork is conducted at the end of the probation period to evaluate the employee's performance and suitability for the role. It is based on project contributions, teamwork, punctuality, and adherence to company values. Successful completion leads to permanent role allocation.",
+        "At the end of the probation period, PowerWork conducts a final assessment to evaluate the employee's performance and suitability for the role. This assessment considers project contributions, teamwork, punctuality, and adherence to company values. Successful completion results in permanent role allocation.",
+        "PowerWork's final assessment is conducted at the end of the probation period to evaluate performance and suitability for the role. It is based on project contributions, teamwork, punctuality, and adherence to company values. Successful completion leads to a permanent role.",
+        "The final assessment at PowerWork evaluates the employee's performance and suitability for the role at the end of the probation period. It considers project contributions, teamwork, punctuality, and adherence to company values. Successful completion results in permanent role allocation.",
+        "At PowerWork, the final assessment is conducted at the end of the probation period to evaluate performance and suitability for the role. It is based on project contributions, teamwork, punctuality, and adherence to company values. Successful completion leads to a permanent role."
+      ]
+    },
+    {
+      "tag": "department_allocation",
+      "patterns": [
+        "What is department allocation?",
+        "How does department allocation work?",
+        "Department allocation details",
+        "Can you explain department allocation?",
+        "What happens during department allocation?",
+        "Details about department allocation",
+        "How is department allocation done?",
+        "What is the process of department allocation?",
+        "How are departments allocated?",
+        "Department allocation process"
+      ],
+      "responses": [
+        "After the probation period, new joiners are placed in their designated departments. Each department has a designated onboarding mentor to assist with role-specific knowledge transfer.",
+        "At PowerWork, new joiners are placed in their designated departments after the probation period. Each department has an onboarding mentor to assist with role-specific knowledge transfer.",
+        "Following the probation period, new joiners at PowerWork are allocated to their designated departments. Each department has a designated onboarding mentor to help with role-specific knowledge transfer.",
+        "After completing the probation period, new joiners at PowerWork are placed in their designated departments. Each department has an onboarding mentor to assist with role-specific knowledge transfer.",
+        "New joiners at PowerWork are allocated to their designated departments after the probation period. Each department has a designated onboarding mentor to help with role-specific knowledge transfer."
+      ]
+    },
+    {
+      "tag": "casual_leave",
+      "patterns": [
+        "Tell me about casual leave",
+        "What is casual leave?",
+        "Casual leave details",
+        "How many casual leaves do I get?",
+        "What is the casual leave policy?",
+        "Number of casual leaves allowed",
+        "Explain casual leave",
+        "Details about casual leave",
+        "How does casual leave work?",
+        "What are casual leaves?"
+      ],
+      "responses": [
+        "Casual Leave (CL) at PowerWork is 12 days per year. It is used for personal matters or unforeseen events. Note that CL cannot be combined with Sick Leave.",
+        "At PowerWork, employees are entitled to 12 days of Casual Leave (CL) per year. This leave is intended for personal matters or unforeseen events and cannot be combined with Sick Leave.",
+        "PowerWork provides 12 days of Casual Leave (CL) per year for personal matters or unforeseen events. Please note that Casual Leave cannot be combined with Sick Leave.",
+        "Employees at PowerWork receive 12 days of Casual Leave (CL) annually. This leave is for personal matters or unforeseen events and cannot be combined with Sick Leave.",
+        "Casual Leave (CL) at PowerWork allows employees 12 days per year for personal matters or unforeseen events. It cannot be combined with Sick Leave."
+      ]
+    },
+    {
+      "tag": "sick_leave",
+      "patterns": [
+        "Tell me about sick leave",
+        "What is sick leave?",
+        "Sick leave details",
+        "How many sick leaves do I get?",
+        "What is the sick leave policy?",
+        "Number of sick leaves allowed",
+        "Explain sick leave",
+        "Details about sick leave",
+        "How does sick leave work?",
+        "What are sick leaves?"
+      ],
+      "responses": [
+        "Sick Leave (SL) at PowerWork is 8 days per year. It is used when an employee is unwell and cannot attend work. Medical proof is required if the absence extends beyond two days.",
+        "At PowerWork, employees are entitled to 8 days of Sick Leave (SL) per year. This leave is for when an employee is unwell and unable to attend work. Medical proof is required if the absence extends beyond two days.",
+        "PowerWork provides 8 days of Sick Leave (SL) per year for employees who are unwell and cannot attend work. Medical proof is needed if the absence is longer than two days.",
+        "Employees at PowerWork receive 8 days of Sick Leave (SL) annually. This leave is for when they are unwell and unable to work. Medical proof is required for absences longer than two days.",
+        "Sick Leave (SL) at PowerWork allows employees 8 days per year for illness. If the absence extends beyond two days, medical proof is required."
+      ]
+    },
+    {
+      "tag": "earned_leave",
+      "patterns": [
+        "Tell me about earned leave",
+        "What is earned leave?",
+        "Earned leave details",
+        "How many earned leaves do I get?",
+        "What is the earned leave policy?",
+        "Number of earned leaves allowed",
+        "Explain earned leave",
+        "Details about earned leave",
+        "How does earned leave work?",
+        "What are earned leaves?"
+      ],
+      "responses": [
+        "Earned Leave (EL) at PowerWork is 15 days per year, accrued monthly. It is used for planned vacations or personal commitments and must be requested at least two weeks in advance.",
+        "At PowerWork, employees are entitled to 15 days of Earned Leave (EL) per year, accrued monthly. This leave is for planned vacations or personal commitments and must be requested at least two weeks in advance.",
+        "PowerWork provides 15 days of Earned Leave (EL) per year, accrued monthly. This leave is intended for planned vacations or personal commitments and must be requested at least two weeks in advance.",
+        "Employees at PowerWork receive 15 days of Earned Leave (EL) annually, accrued monthly. This leave is for planned vacations or personal commitments and must be requested at least two weeks in advance.",
+        "Earned Leave (EL) at PowerWork allows employees 15 days per year, accrued monthly, for planned vacations or personal commitments. It must be requested at least two weeks in advance."
+      ]
+    },
+    {
+      "tag": "maternity_leave",
+      "patterns": [
+        "Tell me about maternity leave",
+        "What is maternity leave?",
+        "Maternity leave details",
+        "How many maternity leaves do I get?",
+        "What is the maternity leave policy?",
+        "Number of maternity leaves allowed",
+        "Explain maternity leave",
+        "Details about maternity leave",
+        "How does maternity leave work?",
+        "What are maternity leaves?"
+      ],
+      "responses": [
+        "Maternity Leave at PowerWork is 26 weeks, applicable to female employees. It requires a doctor's certificate and is applicable only after one year of service.",
+        "At PowerWork, female employees are entitled to 26 weeks of Maternity Leave. This leave requires a doctor's certificate and is applicable only after one year of service.",
+        "PowerWork provides 26 weeks of Maternity Leave for female employees. A doctor's certificate is required, and the leave is applicable only after one year of service.",
+        "Female employees at PowerWork receive 26 weeks of Maternity Leave. This leave requires a doctor's certificate and is applicable only after one year of service.",
+        "Maternity Leave at PowerWork allows female employees 26 weeks of leave. It requires a doctor's certificate and is applicable only after one year of service."
+      ]
+    },
+    {
+      "tag": "paternity_leave",
+      "patterns": [
+        "Tell me about paternity leave",
+        "What is paternity leave?",
+        "Paternity leave details",
+        "How many paternity leaves do I get?",
+        "What is the paternity leave policy?",
+        "Number of paternity leaves allowed",
+        "Explain paternity leave",
+        "Details about paternity leave",
+        "How does paternity leave work?",
+        "What are paternity leaves?"
+      ],
+      "responses": [
+        "Paternity Leave at PowerWork is 5 days. It applies to male employees and must be taken within two weeks of the birth.",
+        "At PowerWork, male employees are entitled to 5 days of Paternity Leave. This leave must be taken within two weeks of the birth.",
+        "PowerWork provides 5 days of Paternity Leave for male employees. This leave must be taken within two weeks of the birth.",
+        "Male employees at PowerWork receive 5 days of Paternity Leave. This leave must be taken within two weeks of the birth.",
+        "Paternity Leave at PowerWork allows male employees 5 days of leave. It must be taken within two weeks of the birth."
+      ]
+    },
+    {
+      "tag": "leave_terms",
+      "patterns": [
+        "Tell me about leave terms",
+        "What are the leave terms?",
+        "Leave terms details",
+        "Explain the leave terms",
+        "Details about leave terms",
+        "What are the terms for leave?",
+        "How do leave terms work?",
+        "What are the conditions for leave?",
+        "Leave terms and conditions",
+        "What are the rules for leave?"
+      ],
+      "responses": [
+        "Leave balances at PowerWork are reset at the start of each calendar year. Employees must update their reporting managers before availing any leave. Unused leaves may not be carried forward, except for Earned Leave, which has a carry-forward limit of up to 10 days. Unauthorized absence may result in disciplinary action.",
+        "At PowerWork, leave balances are reset at the start of each calendar year. Employees must inform their reporting managers before taking any leave. Unused leaves cannot be carried forward, except for Earned Leave, which has a carry-forward limit of up to 10 days. Unauthorized absence may lead to disciplinary action.",
+        "PowerWork resets leave balances at the start of each calendar year. Employees need to update their reporting managers before taking leave. Unused leaves may not be carried forward, except for Earned Leave, which can be carried forward up to 10 days. Unauthorized absence may result in disciplinary action.",
+        "Leave balances at PowerWork are reset annually at the start of the calendar year. Employees must notify their reporting managers before availing any leave. Unused leaves cannot be carried forward, except for Earned Leave, which can be carried forward up to 10 days. Unauthorized absence may result in disciplinary action.",
+        "At PowerWork, leave balances reset at the beginning of each calendar year. Employees must update their reporting managers before taking leave. Unused leaves may not be carried forward, except for Earned Leave, which has a carry-forward limit of up to 10 days. Unauthorized absence may lead to disciplinary action."
+      ]
+    },
+    {
+      "tag": "travel_policy_overview",
+      "patterns": [
+        "Tell me about the travel policy",
+        "What is the travel policy?",
+        "Travel policy details",
+        "Can you explain the travel policy?",
+        "What are the travel policy guidelines?",
+        "Details about the travel policy",
+        "How does the travel policy work?",
+        "What is included in the travel policy?",
+        "Overview of the travel policy",
+        "Explain the travel policy"
+      ],
+      "responses": [
+        "The PowerWork Travel Policy outlines the guidelines and procedures for business travel to ensure efficiency and compliance. It covers eligibility, booking procedures, expense claims, and terms and conditions.",
+        "PowerWork's Travel Policy provides guidelines and procedures for business travel to ensure efficiency and compliance. It includes details on eligibility, booking procedures, expense claims, and terms and conditions.",
+        "The Travel Policy at PowerWork includes guidelines and procedures for business travel to ensure efficiency and compliance. It covers eligibility, booking procedures, expense claims, and terms and conditions.",
+        "At PowerWork, the Travel Policy outlines the guidelines and procedures for business travel to ensure efficiency and compliance. It includes information on eligibility, booking procedures, expense claims, and terms and conditions.",
+        "PowerWork's Travel Policy details the guidelines and procedures for business travel to ensure efficiency and compliance. It includes eligibility criteria, booking procedures, expense claims, and terms and conditions."
+      ]
+    },
+    {
+      "tag": "travel_eligibility",
+      "patterns": [
+        "Who is eligible for business travel?",
+        "Travel eligibility details",
+        "Eligibility for travel",
+        "Can you explain travel eligibility?",
+        "Who can travel for business?",
+        "Details about travel eligibility",
+        "What are the eligibility criteria for travel?",
+        "How is travel eligibility determined?",
+        "Who qualifies for business travel?",
+        "Travel eligibility criteria"
+      ],
+      "responses": [
+        "Eligibility for business travel at PowerWork is determined based on the employee's role and the necessity of travel for business purposes. Specific criteria and approvals are required before travel arrangements can be made.",
+        "At PowerWork, eligibility for business travel is based on the employee's role and the necessity of travel for business purposes. Specific criteria and approvals are needed before making travel arrangements.",
+        "PowerWork determines eligibility for business travel based on the employee's role and the necessity of travel for business purposes. Specific criteria and approvals are required before travel arrangements can be made.",
+        "Eligibility for business travel at PowerWork depends on the employee's role and the necessity of travel for business purposes. Specific criteria and approvals must be met before travel arrangements can be made.",
+        "At PowerWork, business travel eligibility is determined by the employee's role and the necessity of travel for business purposes. Specific criteria and approvals are required before making travel arrangements."
+      ]
+    },
+    {
+      "tag": "booking_procedures",
+      "patterns": [
+        "How do I book travel?",
+        "Travel booking procedures",
+        "Booking travel details",
+        "Can you explain the travel booking process?",
+        "What are the procedures for booking travel?",
+        "Details about booking travel",
+        "How to book travel?",
+        "What is the travel booking process?",
+        "How can I book travel?",
+        "Steps to book travel"
+      ],
+      "responses": [
+        "Travel bookings at PowerWork must be made through the designated travel portal or approved travel agencies. Employees are required to follow the booking procedures outlined in the policy to ensure compliance and cost-effectiveness.",
+        "At PowerWork, travel bookings must be made through the designated travel portal or approved travel agencies. Employees need to follow the booking procedures in the policy to ensure compliance and cost-effectiveness.",
+        "PowerWork requires travel bookings to be made through the designated travel portal or approved travel agencies. Employees must adhere to the booking procedures outlined in the policy for compliance and cost-effectiveness.",
+        "To book travel at PowerWork, employees must use the designated travel portal or approved travel agencies. Following the booking procedures in the policy ensures compliance and cost-effectiveness.",
+        "Employees at PowerWork must book travel through the designated travel portal or approved travel agencies. The booking procedures outlined in the policy must be followed to ensure compliance and cost-effectiveness."
+      ]
+    },
+    {
+      "tag": "expense_claims",
+      "patterns": [
+        "How do I claim travel expenses?",
+        "Travel expense claims",
+        "Expense claim details",
+        "Can you explain the travel expense claim process?",
+        "What are the procedures for claiming travel expenses?",
+        "Details about travel expense claims",
+        "How to claim travel expenses?",
+        "What is the travel expense claim process?",
+        "How can I claim travel expenses?",
+        "Steps to claim travel expenses"
+      ],
+      "responses": [
+        "Travel expenses at PowerWork can be claimed by submitting the necessary receipts and documentation through the expense management system. Claims must be made within the stipulated time frame and adhere to the company's expense policy.",
+        "At PowerWork, travel expenses can be claimed by submitting the required receipts and documentation through the expense management system. Claims need to be made within the stipulated time frame and follow the company's expense policy.",
+        "PowerWork allows travel expenses to be claimed by submitting the necessary receipts and documentation through the expense management system. Claims must adhere to the stipulated time frame and the company's expense policy.",
+        "To claim travel expenses at PowerWork, employees must submit the necessary receipts and documentation through the expense management system. Claims should be made within the stipulated time frame and comply with the company's expense policy.",
+        "Employees at PowerWork can claim travel expenses by submitting the required receipts and documentation through the expense management system. Claims must be made within the stipulated time frame and adhere to the company's expense policy."
+      ]
+    },
+    {
+      "tag": "travel_terms_conditions",
+      "patterns": [
+        "What are the travel terms and conditions?",
+        "Travel terms and conditions details",
+        "Terms and conditions for travel",
+        "Can you explain the travel terms and conditions?",
+        "What are the guidelines for travel?",
+        "Details about travel terms and conditions",
+        "How do the travel terms and conditions work?",
+        "What are the rules for travel?",
+        "Travel guidelines and conditions",
+        "Explain the travel terms and conditions"
+      ],
+      "responses": [
+        "The travel terms and conditions at PowerWork include guidelines on travel approvals, permissible expenses, safety protocols, and compliance with company policies. Employees must adhere to these terms to ensure smooth and compliant business travel.",
+        "PowerWork's travel terms and conditions include guidelines on travel approvals, permissible expenses, safety protocols, and compliance with company policies. Employees must follow these terms to ensure smooth and compliant business travel.",
+        "The travel terms and conditions at PowerWork cover guidelines on travel approvals, permissible expenses, safety protocols, and compliance with company policies. Adhering to these terms ensures smooth and compliant business travel.",
+        "At PowerWork, the travel terms and conditions include guidelines on travel approvals, permissible expenses, safety protocols, and compliance with company policies. Employees must adhere to these terms for smooth and compliant business travel.",
+        "PowerWork's travel terms and conditions outline guidelines on travel approvals, permissible expenses, safety protocols, and compliance with company policies. Employees must follow these terms to ensure smooth and compliant business travel."
+      ]
+    },
+    {
+      "tag": "digital_assets_overview",
+      "patterns": [
+        "Tell me about the digital assets policy",
+        "What is the digital assets policy?",
+        "Digital assets policy details",
+        "Can you explain the digital assets policy?",
+        "What are the guidelines for digital assets?",
+        "Details about the digital assets policy",
+        "How does the digital assets policy work?",
+        "What is included in the digital assets policy?",
+        "Overview of the digital assets policy",
+        "Explain the digital assets policy"
+      ],
+      "responses": [
+        "The PowerWork Digital Assets Policy outlines the guidelines for the use, management, and protection of digital assets within the company. It includes details on asset kit contents, damage and loss policy, and emergency contacts.",
+        "PowerWork's Digital Assets Policy provides guidelines for the use, management, and protection of digital assets within the company. It includes details on asset kit contents, damage and loss policy, and emergency contacts.",
+        "The Digital Assets Policy at PowerWork includes guidelines for the use, management, and protection of digital assets within the company. It covers asset kit contents, damage and loss policy, and emergency contacts.",
+        "At PowerWork, the Digital Assets Policy outlines guidelines for the use, management, and protection of digital assets within the company. It includes information on asset kit contents, damage and loss policy, and emergency contacts.",
+        "PowerWork's Digital Assets Policy details the guidelines for the use, management, and protection of digital assets within the company. It includes asset kit contents, damage and loss policy, and emergency contacts."
+      ]
+    },
+    {
+      "tag": "asset_kit_contents",
+      "patterns": [
+        "What is included in the asset kit?",
+        "Asset kit contents",
+        "Tell me about the asset kit",
+        "Can you explain the asset kit contents?",
+        "What are the items in the asset kit?",
+        "Details about the asset kit",
+        "What does the asset kit contain?",
+        "Describe the asset kit",
+        "What is in the asset kit?",
+        "Contents of the asset kit"
+      ],
+      "responses": [
+        "The asset kit provided by PowerWork includes essential digital tools and resources required for employees to perform their duties effectively. Specific contents may vary based on the role and department.",
+        "PowerWork's asset kit includes essential digital tools and resources needed for employees to perform their duties effectively. The specific contents may vary depending on the role and department.",
+        "The asset kit at PowerWork contains essential digital tools and resources necessary for employees to carry out their duties effectively. The contents may vary based on the role and department.",
+        "At PowerWork, the asset kit includes essential digital tools and resources required for employees to perform their duties effectively. The specific contents may vary depending on the role and department.",
+        "PowerWork provides an asset kit that includes essential digital tools and resources needed for employees to perform their duties effectively. The contents may vary based on the role and department."
+      ]
+    },
+    {
+      "tag": "damage_loss_policy",
+      "patterns": [
+        "What is the damage and loss policy?",
+        "Damage and loss policy details",
+        "Tell me about the damage and loss policy",
+        "Can you explain the damage and loss policy?",
+        "What are the guidelines for damage and loss?",
+        "Details about the damage and loss policy",
+        "How does the damage and loss policy work?",
+        "What is the process for reporting damage or loss?",
+        "Damage and loss policy explanation",
+        "Describe the damage and loss policy"
+      ],
+      "responses": [
+        "The damage and loss policy at PowerWork outlines the procedures and responsibilities for reporting and handling damaged or lost digital assets. Employees are required to report any incidents immediately and follow the guidelines for repair or replacement.",
+        "PowerWork's damage and loss policy details the procedures and responsibilities for reporting and handling damaged or lost digital assets. Employees must report any incidents immediately and follow the guidelines for repair or replacement.",
+        "The damage and loss policy at PowerWork includes procedures and responsibilities for reporting and handling damaged or lost digital assets. Employees are required to report incidents immediately and follow the repair or replacement guidelines.",
+        "At PowerWork, the damage and loss policy outlines the procedures and responsibilities for reporting and handling damaged or lost digital assets. Employees must report any incidents immediately and adhere to the guidelines for repair or replacement.",
+        "PowerWork's damage and loss policy specifies the procedures and responsibilities for reporting and handling damaged or lost digital assets. Employees are required to report incidents immediately and follow the guidelines for repair or replacement."
+      ]
+    },
+    {
+      "tag": "emergency_contacts",
+      "patterns": [
+        "Who are the emergency contacts?",
+        "Emergency contacts details",
+        "Tell me about the emergency contacts",
+        "Can you provide emergency contact information?",
+        "Who should I contact in an emergency?",
+        "Details about emergency contacts",
+        "Emergency contact list",
+        "Who are the key emergency contacts?",
+        "Emergency contact information",
+        "Who to contact in case of emergency?"
+      ],
+      "responses": [
+        "The emergency contacts listed in the PowerWork Digital Assets Policy include key personnel responsible for handling urgent issues related to digital assets. Employees should reach out to these contacts in case of emergencies. For IT-related emergencies, contact John Smith at it-support@powerwork.com. For HR-related emergencies, contact Anna Peterson at hr@powerwork.com. For Finance-related emergencies, contact Priya Kannan at finance@powerwork.com. For general inquiries, contact the Support Team at support@powerwork.com.",
+        "In case of emergencies related to digital assets, employees should contact the key personnel listed in the PowerWork Digital Assets Policy. For IT emergencies, reach out to John Smith at it-support@powerwork.com. For HR emergencies, contact Anna Peterson at hr@powerwork.com. For Finance emergencies, contact Priya Kannan at finance@powerwork.com. For general inquiries, contact the Support Team at support@powerwork.com.",
+        "PowerWork's emergency contacts for digital assets include key personnel responsible for handling urgent issues. For IT emergencies, contact John Smith at it-support@powerwork.com. For HR emergencies, contact Anna Peterson at hr@powerwork.com. For Finance emergencies, contact Priya Kannan at finance@powerwork.com. For general inquiries, contact the Support Team at support@powerwork.com.",
+        "The emergency contacts for digital assets at PowerWork include key personnel responsible for urgent issues. For IT-related emergencies, contact John Smith at it-support@powerwork.com. For HR-related emergencies, contact Anna Peterson at hr@powerwork.com. For Finance-related emergencies, contact Priya Kannan at finance@powerwork.com. For general inquiries, contact the Support Team at support@powerwork.com.",
+        "Employees should reach out to the emergency contacts listed in the PowerWork Digital Assets Policy for urgent issues. For IT emergencies, contact John Smith at it-support@powerwork.com. For HR emergencies, contact Anna Peterson at hr@powerwork.com. For Finance emergencies, contact Priya Kannan at finance@powerwork.com. For general inquiries, contact the Support Team at support@powerwork.com."
+      ]
+    },
+    {
+      "tag": "leadership_team",
+      "patterns": [
+        "Tell me about the leadership team",
+        "Who is in the leadership team?",
+        "Leadership team details",
+        "Can you provide information about the leadership team?",
+        "Who are the leaders at PowerWork?",
+        "Details about the leadership team",
+        "Who are the key executives?",
+        "Leadership team information",
+        "Who are the top leaders?",
+        "Leadership team members"
+      ],
+      "responses": [
+        "The leadership team at PowerWork consists of key executives responsible for strategic decision-making and overall management of the company. This includes the Managing Director (MD), James Thornton (james.thornton@powerwork.com), Chief Technology Officer (CTO), Sarah Lee (sarah.lee@powerwork.com), Chief Financial Officer (CFO), Robert Chang (robert.chang@powerwork.com), and Chief Information Officer (CIO), Emily Wells (emily.wells@powerwork.com).",
+        "PowerWork's leadership team includes key executives responsible for strategic decision-making and overall management. The team consists of the Managing Director (MD), James Thornton (james.thornton@powerwork.com), Chief Technology Officer (CTO), Sarah Lee (sarah.lee@powerwork.com), Chief Financial Officer (CFO), Robert Chang (robert.chang@powerwork.com), and Chief Information Officer (CIO), Emily Wells (emily.wells@powerwork.com).",
+        "The leadership team at PowerWork is made up of key executives responsible for strategic decision-making and overall management. This includes the Managing Director (MD), James Thornton (james.thornton@powerwork.com), Chief Technology Officer (CTO), Sarah Lee (sarah.lee@powerwork.com), Chief Financial Officer (CFO), Robert Chang (robert.chang@powerwork.com), and Chief Information Officer (CIO), Emily Wells (emily.wells@powerwork.com).",
+        "At PowerWork, the leadership team consists of key executives responsible for strategic decision-making and overall management. The team includes the Managing Director (MD), James Thornton (james.thornton@powerwork.com), Chief Technology Officer (CTO), Sarah Lee (sarah.lee@powerwork.com), Chief Financial Officer (CFO), Robert Chang (robert.chang@powerwork.com), and Chief Information Officer (CIO), Emily Wells (emily.wells@powerwork.com).",
+        "PowerWork's leadership team comprises key executives responsible for strategic decision-making and overall management. This includes the Managing Director (MD), James Thornton (james.thornton@powerwork.com), Chief Technology Officer (CTO), Sarah Lee (sarah.lee@powerwork.com), Chief Financial Officer (CFO), Robert Chang (robert.chang@powerwork.com), and Chief Information Officer (CIO), Emily Wells (emily.wells@powerwork.com)."
+      ]
+    },
+    {
+      "tag": "ranking_structure",
+      "patterns": [
+        "What is the ranking structure?",
+        "Tell me about the ranking structure",
+        "Ranking structure details",
+        "Can you explain the ranking structure?",
+        "What are the levels of management?",
+        "Details about the ranking structure",
+        "How is the ranking structure organized?",
+        "What is the management hierarchy?",
+        "Describe the ranking structure",
+        "Ranking structure information"
+      ],
+      "responses": [
+        "The ranking structure at PowerWork is organized in a hierarchical tree format, detailing the levels of management and reporting lines within the company. It ensures clear communication and efficient workflow. The structure includes the Managing Director (James Thornton), Chief Technology Officer (Sarah Lee), Chief Financial Officer (Robert Chang), and Chief Information Officer (Emily Wells).",
+        "PowerWork's ranking structure is organized in a hierarchical tree format, detailing the levels of management and reporting lines within the company. This structure ensures clear communication and efficient workflow. It includes the Managing Director (James Thornton), Chief Technology Officer (Sarah Lee), Chief Financial Officer (Robert Chang), and Chief Information Officer (Emily Wells).",
+        "The ranking structure at PowerWork is detailed in a hierarchical tree format, outlining the levels of management and reporting lines within the company. This structure ensures clear communication and efficient workflow. It includes the Managing Director (James Thornton), Chief Technology Officer (Sarah Lee), Chief Financial Officer (Robert Chang), and Chief Information Officer (Emily Wells).",
+        "At PowerWork, the ranking structure is organized in a hierarchical tree format, detailing the levels of management and reporting lines within the company. This structure ensures clear communication and efficient workflow. It includes the Managing Director (James Thornton), Chief Technology Officer (Sarah Lee), Chief Financial Officer (Robert Chang), and Chief Information Officer (Emily Wells).",
+        "PowerWork's ranking structure is detailed in a hierarchical tree format, outlining the levels of management and reporting lines within the company. This structure ensures clear communication and efficient workflow. It includes the Managing Director (James Thornton), Chief Technology Officer (Sarah Lee), Chief Financial Officer (Robert Chang), and Chief Information Officer (Emily Wells)."
+      ]
+    },
+    {
+      "tag": "points_of_contact",
+      "patterns": [
+        "Who are the points of contact?",
+        "Points of contact details",
+        "Tell me about the points of contact",
+        "Can you provide points of contact information?",
+        "Who should I contact for queries?",
+        "Details about points of contact",
+        "Points of contact list",
+        "Who are the key points of contact?",
+        "Points of contact information",
+        "Who to contact for support?"
+      ],
+      "responses": [
+        "The points of contact at PowerWork include key personnel across various departments who are responsible for specific functions and can be approached for related queries and support. For HR queries, contact Anna Peterson (HR Manager) at hr@powerwork.com. For IT support, contact John Smith (IT Specialist) at it-support@powerwork.com. For Finance queries, contact Priya Kannan (Finance Assistant) at finance@powerwork.com. For general inquiries, contact the Support Team at support@powerwork.com.",
+        "PowerWork's points of contact include key personnel across various departments responsible for specific functions. For HR queries, contact Anna Peterson (HR Manager) at hr@powerwork.com. For IT support, contact John Smith (IT Specialist) at it-support@powerwork.com. For Finance queries, contact Priya Kannan (Finance Assistant) at finance@powerwork.com. For general inquiries, contact the Support Team at support@powerwork.com.",
+        "The points of contact at PowerWork include key personnel across various departments responsible for specific functions. For HR queries, contact Anna Peterson (HR Manager) at hr@powerwork.com. For IT support, contact John Smith (IT Specialist) at it-support@powerwork.com. For Finance queries, contact Priya Kannan (Finance Assistant) at finance@powerwork.com. For general inquiries, contact the Support Team at support@powerwork.com.",
+        "At PowerWork, the points of contact include key personnel across various departments responsible for specific functions. For HR queries, contact Anna Peterson (HR Manager) at hr@powerwork.com. For IT support, contact John Smith (IT Specialist) at it-support@powerwork.com. For Finance queries, contact Priya Kannan (Finance Assistant) at finance@powerwork.com. For general inquiries, contact the Support Team at support@powerwork.com.",
+        "PowerWork's points of contact include key personnel across various departments responsible for specific functions. For HR queries, contact Anna Peterson (HR Manager) at hr@powerwork.com. For IT support, contact John Smith (IT Specialist) at it-support@powerwork.com. For Finance queries, contact Priya Kannan (Finance Assistant) at finance@powerwork.com. For general inquiries, contact the Support Team at support@powerwork.com."
+      ]
+    },
+    {
+      "tag": "wfh_furniture_overview",
+      "patterns": [
+        "Tell me about the WFH furniture policy",
+        "What is the WFH furniture policy?",
+        "WFH furniture policy details",
+        "Can you explain the WFH furniture policy?",
+        "What are the guidelines for WFH furniture?",
+        "Details about the WFH furniture policy",
+        "How does the WFH furniture policy work?",
+        "What is included in the WFH furniture policy?",
+        "Overview of the WFH furniture policy",
+        "Explain the WFH furniture policy"
+      ],
+      "responses": [
+        "The PowerWork Work From Home (WFH) Furniture Policy supports employees working from home by providing essential furniture, including an ergonomic chair and an adjustable desk, to maintain comfort and productivity.",
+        "PowerWork's WFH Furniture Policy provides essential furniture for employees working from home, including an ergonomic chair and an adjustable desk, to ensure comfort and productivity.",
+        "The WFH Furniture Policy at PowerWork includes providing essential furniture, such as an ergonomic chair and an adjustable desk, to support employees working from home and maintain their comfort and productivity.",
+        "At PowerWork, the WFH Furniture Policy supports employees working from home by providing essential furniture, including an ergonomic chair and an adjustable desk, to ensure comfort and productivity.",
+        "PowerWork's WFH Furniture Policy includes providing essential furniture, such as an ergonomic chair and an adjustable desk, to support employees working from home and maintain their comfort and productivity."
+      ]
+    },
+    {
+      "tag": "furniture_details",
+      "patterns": [
+        "What furniture is provided?",
+        "Furniture details",
+        "Tell me about the provided furniture",
+        "Can you explain the provided furniture?",
+        "What are the items provided for WFH?",
+        "Details about the provided furniture",
+        "What furniture do employees get?",
+        "Describe the provided furniture",
+        "What is included in the WFH furniture?",
+        "Provided furniture information"
+      ],
+      "responses": [
+        "PowerWork provides an ergonomic chair and an adjustable desk for employees working from home. Employees only need to cover the tax incurred on the furniture, while the company covers the remaining cost.",
+        "At PowerWork, employees working from home are provided with an ergonomic chair and an adjustable desk. Employees only need to cover the tax incurred on the furniture, while the company covers the remaining cost.",
+        "PowerWork provides an ergonomic chair and an adjustable desk for employees working from home. The company covers the cost of the furniture, and employees only need to pay the tax incurred.",
+        "Employees at PowerWork receive an ergonomic chair and an adjustable desk for working from home. The company covers the cost of the furniture, and employees only need to pay the tax incurred.",
+        "PowerWork provides an ergonomic chair and an adjustable desk for employees working from home. Employees are responsible for covering the tax incurred on the furniture, while the company covers the remaining cost."
+      ]
+    },
+    {
+      "tag": "furniture_terms_conditions",
+      "patterns": [
+        "What are the terms and conditions for WFH furniture?",
+        "WFH furniture terms and conditions",
+        "Tell me about the WFH furniture terms",
+        "Can you explain the WFH furniture terms and conditions?",
+        "What are the guidelines for WFH furniture?",
+        "Details about the WFH furniture terms",
+        "How do the WFH furniture terms work?",
+        "What are the rules for WFH furniture?",
+        "WFH furniture terms explanation",
+        "Describe the WFH furniture terms and conditions"
+      ],
+      "responses": [
+        "The terms and conditions for WFH furniture at PowerWork include eligibility criteria (minimum six months of service), exclusive use for work-related purposes, ownership remaining with PowerWork, and responsibilities for minor repairs, with major maintenance costs covered by the company.",
+        "PowerWork's terms and conditions for WFH furniture include eligibility criteria (minimum six months of service), exclusive use for work-related purposes, ownership remaining with PowerWork, and responsibilities for minor repairs, with major maintenance costs covered by the company.",
+        "The WFH furniture terms and conditions at PowerWork include eligibility criteria (minimum six months of service), exclusive use for work-related purposes, ownership remaining with PowerWork, and responsibilities for minor repairs, with major maintenance costs covered by the company.",
+        "At PowerWork, the terms and conditions for WFH furniture include eligibility criteria (minimum six months of service), exclusive use for work-related purposes, ownership remaining with PowerWork, and responsibilities for minor repairs, with major maintenance costs covered by the company.",
+        "PowerWork's WFH furniture terms and conditions include eligibility criteria (minimum six months of service), exclusive use for work-related purposes, ownership remaining with PowerWork, and responsibilities for minor repairs, with major maintenance costs covered by the company."
+      ]
+    }
+  ]
+}
+
