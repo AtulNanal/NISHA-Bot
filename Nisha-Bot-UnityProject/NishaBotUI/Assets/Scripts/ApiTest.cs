@@ -1,12 +1,15 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.Networking;
 using UnityEngine.UIElements;
 
 public class ApiTest : MonoBehaviour
 {
-
+    public bool ShowTestUI = false;
+    
     public VisualElement Root;
     
     private Button _getMethodTest, _postMethodTest;
@@ -14,9 +17,14 @@ public class ApiTest : MonoBehaviour
     public UIDocument _UIDocument;
 
     private string message="hello";
+
+    public Action<bool, string> BotResponseReceived; 
+        
     // Start is called before the first frame update
     void Start()
     {
+        if (ShowTestUI == false) return;
+        
        Root= _UIDocument.rootVisualElement;
             
         /*_getMethodTest = new Button()
@@ -41,6 +49,11 @@ public class ApiTest : MonoBehaviour
         StartCoroutine(SendMessageToBackend(message));
     }
 
+    public void SendPostMessage(string message)
+    {
+        StartCoroutine(SendMessageToBackend(message));
+    }
+
     private string apiUrl = "http://127.0.0.1:8000/chatbot/";
     private IEnumerator SendMessageToBackend(string message)
     {
@@ -61,6 +74,7 @@ public class ApiTest : MonoBehaviour
             // Check for errors
             if (request.result != UnityWebRequest.Result.Success)
             {
+                BotResponseReceived?.Invoke(false, request.error);
                 // responseText.text = "Error: " + request.error;
                 Debug.Log("Error: " + request.error);
             }
@@ -68,6 +82,7 @@ public class ApiTest : MonoBehaviour
             {
                 // Parse the response and update the UI
                 string response = request.downloadHandler.text;
+                BotResponseReceived?.Invoke(true, response);
                 // responseText.text = "Bot: " + response;
                 Debug.Log("Bot: " + response);
             }

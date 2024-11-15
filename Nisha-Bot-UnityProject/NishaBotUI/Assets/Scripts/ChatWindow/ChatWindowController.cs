@@ -11,9 +11,15 @@ public class ChatWindowController : ControllerBase
     {
         get { return _chatWindowView; }
     }
-    public ChatWindowController(VisualElement visualElement) : base()
+
+    private ApiTest _apiHandler;
+    
+    public ChatWindowController(VisualElement visualElement, ApiTest apihandler) : base()
     {
         _chatWindowView = new ChatWindowView(visualElement, this);
+        _apiHandler = apihandler;
+        _apiHandler.BotResponseReceived += BotResponseMessageReceived;
+        Debug.Log(_apiHandler);
     }
     
     public void ChatWindowPostButtonClicked(string userChatText)
@@ -25,17 +31,18 @@ public class ChatWindowController : ControllerBase
         UserChatMessageController userChatMessageController = new UserChatMessageController(userChatMessageContainer);
         userChatMessageController.ConvertUserChatToChatMessage(userChatText);
         _chatWindowView.AdduserChatMessageToScrollView(userChatMessageController.View.Root);
+        _apiHandler.SendPostMessage(userChatText);
     }
 
-    public void BotResponseMessageReceived(string botReposeText)
+    public void BotResponseMessageReceived(bool status, string botReposeText)
     {
-        Debug.Log("BotResponseMessageReceived");
-        VisualTreeAsset botChatMessageAsset = Resources.Load("UXMLs/" + UITags.UITagsChatWindow.BotChatMessageContainerName) as VisualTreeAsset;
+        Debug.Log("BotResponseMessageReceived " + status.ToString());
+        VisualTreeAsset botChatMessageAsset =
+            Resources.Load("UXMLs/" + UITags.UITagsChatWindow.BotChatMessageContainerName) as VisualTreeAsset;
         VisualElement botChatMessageContainer = botChatMessageAsset.CloneTree();
         BotChatMessageController botChatMessageController = new BotChatMessageController(botChatMessageContainer);
         botChatMessageController.ConvertUserChatToChatMessage(botReposeText);
         _chatWindowView.AdduserChatMessageToScrollView(botChatMessageController.View.Root);
-
     }
 
 }
