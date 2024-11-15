@@ -3,11 +3,21 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
 
-public class BotChatMessageView
+public class BotChatMessageView : IView
 {
     private VisualElement _root;
-    
+
     private BotChatMessageController _controller;
+    
+    public VisualElement Root
+    {
+        get { return _root; }
+    }
+
+    public ControllerBase ControllerBase
+    {
+        get { return _controller; }
+    }
 
     private Label _labelBotChat;
     private VisualElement _containerUserReactions;
@@ -21,11 +31,6 @@ public class BotChatMessageView
         _controller = controller;
         QueryVisualElements();
         RegisterEvents();
-    }
-    
-    public VisualElement Root
-    {
-        get { return _root; }
     }
     
     private void QueryVisualElements()
@@ -78,4 +83,6 @@ public class BotChatMessageView
     {
         
     }
+
+
 }

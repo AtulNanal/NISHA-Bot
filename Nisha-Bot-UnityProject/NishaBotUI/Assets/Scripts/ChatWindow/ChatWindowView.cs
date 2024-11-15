@@ -3,15 +3,22 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
 
-public class ChatWindowView
+public class ChatWindowView : IView
 {
     private VisualElement _root;
+    
+    private ChatWindowController _controller;
     
     public VisualElement Root
     {
         get { return _root; }
     }
 
+    public ControllerBase ControllerBase
+    {
+        get { return _controller; }
+    }
+    
     private ScrollView _scrollViewRecentChats;
 
     private VisualElement _userInputBarContainer;
@@ -24,7 +31,7 @@ public class ChatWindowView
 
     private Button _buttonAttach;
 
-    private ChatWindowController _controller;
+
 
     private VisualElement _containerTopBar;
 
@@ -90,5 +97,6 @@ public class ChatWindowView
     {
         _scrollViewRecentChats.Add(visualElement);
     }
+
 
 }
