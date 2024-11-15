@@ -12,29 +12,69 @@ public class ApiTest : MonoBehaviour
     private Button _getMethodTest, _postMethodTest;
 
     public UIDocument _UIDocument;
+
+    private string message="hello";
     // Start is called before the first frame update
     void Start()
     {
        Root= _UIDocument.rootVisualElement;
             
-        _getMethodTest = new Button()
+        /*_getMethodTest = new Button()
         {
             text = "Get Method"
         };
         _getMethodTest.RegisterCallback<ClickEvent>(GetMethodTest);
         
-        Root.Add(_getMethodTest);
+        Root.Add(_getMethodTest);*/
         
         _postMethodTest = new Button()
         {
             text = "Post Method"
         };
-        _postMethodTest.RegisterCallback<ClickEvent>(PostMethodTest);
+        _postMethodTest.RegisterCallback<ClickEvent>(PostMessage);
         
         Root.Add(_postMethodTest);
     }
 
-    private void PostMethodTest(ClickEvent evt)
+    private void PostMessage(ClickEvent evt)
+    {
+        StartCoroutine(SendMessageToBackend(message));
+    }
+
+    private string apiUrl = "http://127.0.0.1:8000/chatbot/";
+    private IEnumerator SendMessageToBackend(string message)
+    {
+        // Create a JSON object to send
+        string jsonMessage = "{\"message\": \"" + message + "\"}";
+
+        // Create a UnityWebRequest to send a POST request
+        using (UnityWebRequest request = new UnityWebRequest(apiUrl, "POST"))
+        {
+            byte[] bodyRaw = System.Text.Encoding.UTF8.GetBytes(jsonMessage);  // Convert the message to bytes
+            request.uploadHandler = new UploadHandlerRaw(bodyRaw);
+            request.downloadHandler = new DownloadHandlerBuffer();
+            request.SetRequestHeader("Content-Type", "application/json");
+
+            // Wait for the response from the server
+            yield return request.SendWebRequest();
+
+            // Check for errors
+            if (request.result != UnityWebRequest.Result.Success)
+            {
+                // responseText.text = "Error: " + request.error;
+                Debug.Log("Error: " + request.error);
+            }
+            else
+            {
+                // Parse the response and update the UI
+                string response = request.downloadHandler.text;
+                // responseText.text = "Bot: " + response;
+                Debug.Log("Bot: " + response);
+            }
+        }
+    }
+    
+    /*private void PostMethodTest(ClickEvent evt)
     {
         Debug.Log("Testing PostMethod");
         StartCoroutine(postRequest("http://localhost:8000/post-message?name=hey-rohan"));
@@ -77,5 +117,7 @@ public class ApiTest : MonoBehaviour
         {
             Debug.Log("Received GET: " + uwr.downloadHandler.text);
         }
-    }
+    }*/
+    
+
 }
