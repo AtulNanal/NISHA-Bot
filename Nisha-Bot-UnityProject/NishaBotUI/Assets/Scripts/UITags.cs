@@ -17,7 +17,7 @@ public static class UITags
         public const string ButtonPostAttach = "ButtonAttach";
         public const string ContainerTopBar = "ContainerTopBar";
         public const string ButtonBack = "ButtonBack";
-        public const string ButtonProfile = "ButtonProfile";
+        public const string ButtonMinimize = "ButtonMinimize";
 
         public const string DefaultUserText = "Please Enter Your Query Here ...";
 
