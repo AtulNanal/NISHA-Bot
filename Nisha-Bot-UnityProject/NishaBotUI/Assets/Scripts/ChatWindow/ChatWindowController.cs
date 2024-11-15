@@ -1,7 +1,16 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
+
+// Root myDeserializedClass = JsonConvert.DeserializeObject<Root>(myJsonResponse);
+[Serializable]
+public class BotMessage
+{
+    [SerializeField]
+    public string response;
+}
 
 public class ChatWindowController : ControllerBase
 {
@@ -36,12 +45,14 @@ public class ChatWindowController : ControllerBase
 
     public void BotResponseMessageReceived(bool status, string botReposeText)
     {
-        Debug.Log("BotResponseMessageReceived " + status.ToString());
+        BotMessage myDeserializedClass = JsonUtility.FromJson<BotMessage>(botReposeText);
+        
+        Debug.Log("BotResponseMessageReceived " + myDeserializedClass.response);
         VisualTreeAsset botChatMessageAsset =
             Resources.Load("UXMLs/" + UITags.UITagsChatWindow.BotChatMessageContainerName) as VisualTreeAsset;
         VisualElement botChatMessageContainer = botChatMessageAsset.CloneTree();
         BotChatMessageController botChatMessageController = new BotChatMessageController(botChatMessageContainer);
-        botChatMessageController.ConvertUserChatToChatMessage(botReposeText);
+        botChatMessageController.ConvertUserChatToChatMessage(myDeserializedClass.response);
         _chatWindowView.AdduserChatMessageToScrollView(botChatMessageController.View.Root);
     }
 
