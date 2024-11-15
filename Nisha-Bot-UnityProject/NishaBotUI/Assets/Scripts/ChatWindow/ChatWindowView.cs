@@ -37,7 +37,7 @@ public class ChatWindowView : IView
 
     private Button _buttonBackToMainMenu;
 
-    private Button _buttonUserProfile;
+    private Button _buttonUserMinimize;
 
     public ChatWindowView(VisualElement root, ChatWindowController controller)
     {
@@ -58,7 +58,7 @@ public class ChatWindowView : IView
         _buttonAttach = _containerUserChatButtons.Q<Button>(UITags.UITagsChatWindow.ButtonPostAttach);
         _containerTopBar = _root.Q<VisualElement>(UITags.UITagsChatWindow.ContainerTopBar);
         _buttonBackToMainMenu = _containerTopBar.Q<Button>(UITags.UITagsChatWindow.ButtonBack);
-        _buttonUserProfile = _containerTopBar.Q<Button>(UITags.UITagsChatWindow.ButtonProfile);
+        _buttonUserMinimize = _containerTopBar.Q<Button>(UITags.UITagsChatWindow.ButtonMinimize);
         
         Debug.Log(_scrollViewRecentChats);
     }
@@ -67,14 +67,14 @@ public class ChatWindowView : IView
     {
         _buttonPost.clicked += PostButtonClicked;
         _buttonBackToMainMenu.clicked += BackButtonClicked;
-        _buttonUserProfile.clicked += ProfileButtonClicked;
+        _buttonUserMinimize.clicked += MinimizeButtonClicked;
     }
 
     private void UnRegisterEvents()
     {
         _buttonPost.clicked -= PostButtonClicked;
         _buttonBackToMainMenu.clicked -= BackButtonClicked;
-        _buttonUserProfile.clicked -= ProfileButtonClicked;
+        _buttonUserMinimize.clicked -= MinimizeButtonClicked;
     }
 
     private void PostButtonClicked()
@@ -88,9 +88,9 @@ public class ChatWindowView : IView
         Debug.Log("Back To Main Menu");
     }
 
-    private void ProfileButtonClicked()
+    private void MinimizeButtonClicked()
     {
-        Debug.Log("Profile Button Clicked");
+        Debug.Log("Minimize Button Clicked");
     }
 
     public void AdduserChatMessageToScrollView(VisualElement visualElement)
