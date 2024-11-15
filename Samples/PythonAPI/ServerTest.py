@@ -18,4 +18,4 @@ def hello(name: str):
 #APT for POST 
 @app.post("/post-message")
 def hello(name: str):
-    return {'Message': "Congrats " + name + '! Your GET API is working good!'}
+    return {'Message': "Congrats " + name + '! Your POST API is working good!'}
