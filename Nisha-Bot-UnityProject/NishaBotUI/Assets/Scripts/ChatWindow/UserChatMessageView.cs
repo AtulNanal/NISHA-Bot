@@ -3,16 +3,21 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
 
-public class UserChatMessageView
+public class UserChatMessageView : IView
 {
     private VisualElement _root;
     
+    private UserChatMessageController _controller;
+
     public VisualElement Root
     {
         get { return _root; }
     }
-    
-    private UserChatMessageController _controller;
+
+    public ControllerBase ControllerBase
+    {
+        get { return _controller; }
+    }
 
     private Label _labelUserChat;
     
@@ -32,4 +37,6 @@ public class UserChatMessageView
     {
         _labelUserChat.text = userChatString;
     }
+
+
 }
