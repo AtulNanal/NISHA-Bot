@@ -35,5 +35,10 @@ public class ApplicationManager : MonoBehaviour
         {
             _chatWindowController.BotResponseMessageReceived(true,"Hi there this is NISHA --- Your personal assistant for your onboarding journey in this company. How can I help you ?");
         }
+        
+        if (Input.GetKeyUp(KeyCode.Return))
+        {
+            _chatWindowController.ChatWindowPostButtonClicked(_chatWindowController._chatWindowView._textFieldUserChat.text);
+        }
     }
 }

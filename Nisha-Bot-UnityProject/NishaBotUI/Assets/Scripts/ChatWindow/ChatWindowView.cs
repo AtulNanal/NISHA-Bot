@@ -25,7 +25,7 @@ public class ChatWindowView : IView
 
     private VisualElement _userInputBarContainer;
 
-    private TextField _textFieldUserChat;
+    public TextField _textFieldUserChat;
 
     private VisualElement _containerUserChatButtons;
 

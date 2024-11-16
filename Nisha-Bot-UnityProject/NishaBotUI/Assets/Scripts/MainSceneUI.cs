@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -24,6 +25,12 @@ public class MainSceneUI : MonoBehaviour
         GuestLoginBtn.RegisterCallback<ClickEvent>(LoadAUserScene);
 
         //CreateSideBtns();
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyUp(KeyCode.Escape))
+            Application.Quit();
     }
 
     /*void CreateSideBtns()

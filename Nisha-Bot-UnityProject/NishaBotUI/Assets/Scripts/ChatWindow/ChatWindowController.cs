@@ -14,7 +14,7 @@ public class BotMessage
 
 public class ChatWindowController : ControllerBase
 {
-    private ChatWindowView _chatWindowView;
+    public ChatWindowView _chatWindowView;
 
     public override IView View
     {
