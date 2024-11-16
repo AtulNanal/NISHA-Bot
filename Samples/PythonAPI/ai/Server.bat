@@ -1,0 +1,1 @@
+uvicorn ServerTest:app  --reload
