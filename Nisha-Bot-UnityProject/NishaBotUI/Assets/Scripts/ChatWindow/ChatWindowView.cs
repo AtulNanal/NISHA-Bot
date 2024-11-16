@@ -18,6 +18,8 @@ public class ChatWindowView : IView
     {
         get { return _controller; }
     }
+
+    private VisualElement _containerChatWindow;
     
     private ScrollView _scrollViewRecentChats;
 
@@ -31,13 +33,13 @@ public class ChatWindowView : IView
 
     private Button _buttonAttach;
 
-
-
     private VisualElement _containerTopBar;
 
     private Button _buttonBackToMainMenu;
 
     private Button _buttonUserMinimize;
+
+    private Button _buttonChatIcon;
 
     public ChatWindowView(VisualElement root, ChatWindowController controller)
     {
@@ -45,10 +47,12 @@ public class ChatWindowView : IView
         _controller = controller;
         QueryVisualElements();
         RegisterEvents();
+        SetDefaultVisibility();
     }
 
     private void QueryVisualElements()
     {
+        _containerChatWindow = _root.Q<VisualElement>(UITags.UITagsChatWindow.ContainerChatWindow);
         _scrollViewRecentChats = _root.Q<ScrollView>(UITags.UITagsChatWindow.ScrollViewRecentChats);
         _userInputBarContainer = _root.Q<VisualElement>(UITags.UITagsChatWindow.ContainerUserInputBar);
         _textFieldUserChat = _userInputBarContainer.Q<TextField>(UITags.UITagsChatWindow.TextFieldUserChatField);
@@ -59,8 +63,15 @@ public class ChatWindowView : IView
         _containerTopBar = _root.Q<VisualElement>(UITags.UITagsChatWindow.ContainerTopBar);
         _buttonBackToMainMenu = _containerTopBar.Q<Button>(UITags.UITagsChatWindow.ButtonBack);
         _buttonUserMinimize = _containerTopBar.Q<Button>(UITags.UITagsChatWindow.ButtonMinimize);
+        _buttonChatIcon = _root.Q<Button>(UITags.UITagsChatWindow.ButtonChatIcon);
         
         Debug.Log(_scrollViewRecentChats);
+    }
+
+    private void SetDefaultVisibility()
+    {
+        _buttonChatIcon.visible = true;
+        _containerChatWindow.visible = false;
     }
 
     private void RegisterEvents()
@@ -68,6 +79,7 @@ public class ChatWindowView : IView
         _buttonPost.clicked += PostButtonClicked;
         _buttonBackToMainMenu.clicked += BackButtonClicked;
         _buttonUserMinimize.clicked += MinimizeButtonClicked;
+        _buttonChatIcon.clicked += ChatIconClicked;
     }
 
     private void UnRegisterEvents()
@@ -75,6 +87,7 @@ public class ChatWindowView : IView
         _buttonPost.clicked -= PostButtonClicked;
         _buttonBackToMainMenu.clicked -= BackButtonClicked;
         _buttonUserMinimize.clicked -= MinimizeButtonClicked;
+        _buttonChatIcon.clicked -= ChatIconClicked;
     }
 
     private void PostButtonClicked()
@@ -91,6 +104,15 @@ public class ChatWindowView : IView
     private void MinimizeButtonClicked()
     {
         Debug.Log("Minimize Button Clicked");
+        _buttonChatIcon.visible = true;
+        _containerChatWindow.visible = false;
+    }
+
+    private void ChatIconClicked()
+    {
+        Debug.Log("Chat Button Clicked");
+        _buttonChatIcon.visible = false;
+        _containerChatWindow.visible = true;
     }
 
     public void AdduserChatMessageToScrollView(VisualElement visualElement)

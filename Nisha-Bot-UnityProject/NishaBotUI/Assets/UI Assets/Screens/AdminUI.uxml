@@ -23,7 +23,7 @@
                 </ui:VisualElement>
             </ui:VisualElement>
             <ui:VisualElement name="Right" style="flex-grow: 1; background-color: rgb(255, 255, 255); flex-basis: 50%;">
-                <ui:VisualElement name="Image" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); background-image: url(&apos;project://database/Assets/Art/Sprites/ai%20chatbot.jpeg?fileID=21300000&amp;guid=8db6150aada96fd40ad35e37407155f5&amp;type=3#ai chatbot&apos;); margin-left: 100px; margin-right: 100px; margin-top: 100px; margin-bottom: 100px;" />
+                <ui:VisualElement name="Image" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); background-image: url(&apos;project://database/Assets/Art/Sprites/ai%20chatbot.jpeg?fileID=21300000&amp;guid=8db6150aada96fd40ad35e37407155f5&amp;type=3#ai chatbot&apos;); margin-left: 100px; margin-right: 100px; margin-top: 100px; margin-bottom: 100px; height: auto;" />
             </ui:VisualElement>
         </ui:VisualElement>
     </ui:VisualElement>

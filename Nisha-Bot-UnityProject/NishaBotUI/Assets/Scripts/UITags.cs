@@ -9,6 +9,7 @@ public static class UITags
     public static class UITagsChatWindow
     {
         //Tags for Chat Window UI
+        public const string ContainerChatWindow = "ContainerChatWindow";
         public const string ScrollViewRecentChats = "ScrollViewChat";
         public const string ContainerUserInputBar = "ContainerUserInputBar";
         public const string TextFieldUserChatField = "TextFieldUserChatField";
@@ -34,5 +35,8 @@ public static class UITags
         public const string ButtonUserDislike = "ButtonDislike";
         public const string ButtonUserHeart = "ButtonHeart";
         public const string ButtonUserEmoji = "ButtonEmoji";
+        
+        //Tags for Bot Icon
+        public const string ButtonChatIcon = "ButtonChatBotIcon";
     }
 }
