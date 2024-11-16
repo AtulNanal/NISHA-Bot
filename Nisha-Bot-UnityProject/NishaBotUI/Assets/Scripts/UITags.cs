@@ -1,9 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
-using UnityEditor.Build.Player;
-using UnityEngine;
-
 public static class UITags
 {
     public static class UITagsChatWindow
