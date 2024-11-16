@@ -33,7 +33,12 @@ public class ChatWindowController : ControllerBase
     
     public void ChatWindowPostButtonClicked(string userChatText)
     {
-        Debug.Log("ChatWindowPostButtonClicked");
+        Debug.Log("Sending to bot : "+userChatText);
+        if (userChatText.EndsWith("\n"))
+        {
+            userChatText = userChatText.Remove(userChatText.Length - 1);
+           // Debug.Log("Sending to bot Inner : "+userChatText);
+        }
         // Instantiate the UserChatMessageContainer
         VisualTreeAsset userChatMessageAsset = Resources.Load("UXMLs/" + UITags.UITagsChatWindow.UserChatMessageContainerName) as VisualTreeAsset;
         VisualElement userChatMessageContainer = userChatMessageAsset.CloneTree();
@@ -46,6 +51,7 @@ public class ChatWindowController : ControllerBase
 
     public void BotResponseMessageReceived(bool status, string botReposeText)
     {
+        Debug.Log("Server Response : "+status + " : "+botReposeText);
         BotMessage myDeserializedClass = JsonUtility.FromJson<BotMessage>(botReposeText);
         
         Debug.Log("BotResponseMessageReceived " + myDeserializedClass.response);

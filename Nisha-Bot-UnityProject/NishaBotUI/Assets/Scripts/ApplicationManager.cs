@@ -31,10 +31,10 @@ public class ApplicationManager : MonoBehaviour
     void Update()
     {
         //This is temporary code 
-        if (Input.GetKeyUp(KeyCode.Space))
+        /*if (Input.GetKeyUp(KeyCode.Space))
         {
             _chatWindowController.BotResponseMessageReceived(true,"Hi there this is NISHA --- Your personal assistant for your onboarding journey in this company. How can I help you ?");
-        }
+        }*/
         
         if (Input.GetKeyUp(KeyCode.Return))
         {
