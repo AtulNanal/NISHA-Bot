@@ -33,7 +33,7 @@ public class BotChatMessageView : IView
         RegisterEvents();
     }
     
-    private void QueryVisualElements()
+    public void QueryVisualElements()
     {
         _labelBotChat = _root.Q<Label>(UITags.UITagsChatWindow.LabelBotChatMessage);
         _containerUserReactions = _root.Q<VisualElement>(UITags.UITagsChatWindow.ContainerUserReactions);
@@ -43,7 +43,7 @@ public class BotChatMessageView : IView
         _buttonUserEmoji = _containerUserReactions.Q<Button>(UITags.UITagsChatWindow.ButtonUserEmoji);
     }
 
-    private void RegisterEvents()
+    public void RegisterEvents()
     {
         _buttonUserLike.clicked += LikeButtonClicked;
         _buttonUserDislike.clicked += UnlikeBUttonClicked;
@@ -51,7 +51,7 @@ public class BotChatMessageView : IView
         _buttonUserEmoji.clicked += EmojiButtonClicked;
     }
     
-    private void UnRegisterEvents()
+    public void UnRegisterEvents()
     {
         _buttonUserLike.clicked -= LikeButtonClicked;
         _buttonUserDislike.clicked -= UnlikeBUttonClicked;

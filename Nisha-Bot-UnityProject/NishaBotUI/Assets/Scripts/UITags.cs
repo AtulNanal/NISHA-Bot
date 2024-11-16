@@ -37,6 +37,7 @@ public static class UITags
         public const string ButtonUserEmoji = "ButtonEmoji";
         
         //Tags for Bot Icon
-        public const string ButtonChatIcon = "ButtonChatBotIcon";
+        public const string ButtonChatIcon = "ButtonBotIcon";
+        public const string ContainerChatIcon = "ContainerBotIcon";
     }
 }

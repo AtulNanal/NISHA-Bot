@@ -43,6 +43,7 @@ public class ChatWindowView : IView
 
     public ChatWindowView(VisualElement root, ChatWindowController controller)
     {
+        Debug.Log(root.name);
         _root = root;
         _controller = controller;
         QueryVisualElements();
@@ -50,7 +51,7 @@ public class ChatWindowView : IView
         SetDefaultVisibility();
     }
 
-    private void QueryVisualElements()
+    public void QueryVisualElements()
     {
         _containerChatWindow = _root.Q<VisualElement>(UITags.UITagsChatWindow.ContainerChatWindow);
         _scrollViewRecentChats = _root.Q<ScrollView>(UITags.UITagsChatWindow.ScrollViewRecentChats);
@@ -70,11 +71,11 @@ public class ChatWindowView : IView
 
     private void SetDefaultVisibility()
     {
-        _buttonChatIcon.visible = true;
         _containerChatWindow.visible = false;
+        _buttonChatIcon.visible = true;
     }
 
-    private void RegisterEvents()
+    public void RegisterEvents()
     {
         _buttonPost.clicked += PostButtonClicked;
         _buttonBackToMainMenu.clicked += BackButtonClicked;
@@ -82,7 +83,7 @@ public class ChatWindowView : IView
         _buttonChatIcon.clicked += ChatIconClicked;
     }
 
-    private void UnRegisterEvents()
+    public void UnRegisterEvents()
     {
         _buttonPost.clicked -= PostButtonClicked;
         _buttonBackToMainMenu.clicked -= BackButtonClicked;

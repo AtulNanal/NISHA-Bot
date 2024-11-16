@@ -8,4 +8,10 @@ public interface IView
     VisualElement Root { get; }
     
     ControllerBase ControllerBase { get; }
+
+    void QueryVisualElements();
+
+    void RegisterEvents();
+
+    void UnRegisterEvents();
 }

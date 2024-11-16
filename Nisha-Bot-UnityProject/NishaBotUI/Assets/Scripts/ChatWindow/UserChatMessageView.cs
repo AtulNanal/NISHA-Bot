@@ -28,9 +28,19 @@ public class UserChatMessageView : IView
         QueryVisualElements();
     }
 
-    private void QueryVisualElements()
+    public void QueryVisualElements()
     {
         _labelUserChat = _root.Q<Label>(UITags.UITagsChatWindow.LabelUserChatMessage);
+    }
+
+    public void RegisterEvents()
+    {
+        throw new System.NotImplementedException();
+    }
+
+    public void UnRegisterEvents()
+    {
+        throw new System.NotImplementedException();
     }
 
     public void ConvertUserChatToChatMessage(string userChatString)
