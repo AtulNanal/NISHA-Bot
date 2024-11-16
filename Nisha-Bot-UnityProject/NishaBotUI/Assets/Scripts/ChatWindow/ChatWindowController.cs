@@ -39,6 +39,7 @@ public class ChatWindowController : ControllerBase
         VisualElement userChatMessageContainer = userChatMessageAsset.CloneTree();
         UserChatMessageController userChatMessageController = new UserChatMessageController(userChatMessageContainer);
         userChatMessageController.ConvertUserChatToChatMessage(userChatText);
+        _chatWindowView._textFieldUserChat.value = UITags.UITagsChatWindow.DefaultUserText;
         _chatWindowView.AdduserChatMessageToScrollView(userChatMessageController.View.Root);
         _apiHandler.SendPostMessage(userChatText);
     }

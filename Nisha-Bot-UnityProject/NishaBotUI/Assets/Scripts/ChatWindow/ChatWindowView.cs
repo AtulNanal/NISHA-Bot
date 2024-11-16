@@ -94,7 +94,6 @@ public class ChatWindowView : IView
     private void PostButtonClicked()
     {
         _controller.ChatWindowPostButtonClicked(_textFieldUserChat.value);
-        _textFieldUserChat.value = UITags.UITagsChatWindow.DefaultUserText;
     }
 
     private void BackButtonClicked()
