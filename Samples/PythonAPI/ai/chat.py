@@ -37,21 +37,21 @@ def get_response(msg):
     sentence = tokenize(msg)
     print(sentence)  # Print the tokenized sentence
     X = bag_of_words(sentence, all_words)
-    print(X)  # Print the bag of words representation
+   # print(X)  # Print the bag of words representation
     X = X.reshape(1, X.shape[0])
     X = torch.from_numpy(X).to(device)
 
     output = model(X)
-    print(output)  # Print the raw output from the model
+  #  print(output)  # Print the raw output from the model
     _, predicted = torch.max(output, dim=1)
-    print(predicted)  # Print the predicted class index
+  #  print(predicted)  # Print the predicted class index
 
     tag = tags[predicted.item()]
-    print(tag)  # Print the predicted tag
+  #  print(tag)  # Print the predicted tag
 
     probs = torch.softmax(output, dim=1)
     prob = probs[0][predicted.item()]
-    print(prob)  # Print the probability of the predicted class
+  #  print(prob)  # Print the probability of the predicted class
 
     if prob.item() > 0.75:
         return generate_dynamic_response(tag)

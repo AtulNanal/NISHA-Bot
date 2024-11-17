@@ -19,8 +19,8 @@
     {
       "tag": "introduction",
       "patterns": [
-        "Who are you?", 
-        "What are you?", 
+        "Who are you?",
+        "What are you?",
         "Who am I talking with?"
       ],
       "responses": [
@@ -31,7 +31,11 @@
     },
     {
       "tag": "goodbye",
-      "patterns": ["Bye", "See you later", "Goodbye"],
+      "patterns": [
+        "Bye",
+        "See you later",
+        "Goodbye"
+      ],
       "responses": [
         "See you later, thanks for visiting",
         "Have a nice day",
@@ -40,51 +44,51 @@
     },
     {
       "tag": "thanks",
-      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
-      "responses": ["Happy to help!", "Any time!", "My pleasure", "You are welcome!"]
-    },
-    {
-      "tag": "Onboarding",
       "patterns": [
-        "Can you tell me something about onboarding process?",
-        "What is the onboarding process for new joiners?",
-        "Explain onboarding process",
-        "Describe the onboarding process",
-        "How does the onboarding process work?",
-        "What are the steps in the onboarding process?",
-        "What should I expect during onboarding?",
-        "Can you explain the onboarding steps?",
-        "What happens during onboarding?",
-        "How is the onboarding process structured?"
+        "Thanks",
+        "Thank you",
+        "That's helpful",
+        "Thank's a lot!"
       ],
       "responses": [
-          "Surely, the onboarding process consists of 3 main steps - Induction, Probation, and Department Allocation. Probation further consists of training and assessments, that span over a period of 6 months here at PowerWork.",
-          "Onboarding process at PowerWork involves Probation wherein post induction the new-joiners undergo training in their respective domain and have to qualify assessments to pass probation. Once passed, they are allocated to different departments in PowerWork.",
-          "The onboarding process at PowerWork includes Induction, Probation, and Department Allocation. During Probation, new joiners receive training and undergo assessments over a 6-month period.",
-          "At PowerWork, the onboarding process is divided into three main phases: Induction, Probation, and Department Allocation. Probation includes training and assessments that last for 6 months.",
-          "Our onboarding process at PowerWork is designed to integrate new joiners through Induction, Probation, and Department Allocation. Probation involves comprehensive training and assessments over six months."
+        "Happy to help!",
+        "Any time!",
+        "My pleasure",
+        "You are welcome!"
       ]
     },
     {
-      "tag": "induction",
+      "tag": "welcome",
       "patterns": [
-        "Tell me about the induction process",
-        "What happens during induction?",
-        "Induction details",
-        "Describe the induction process",
-        "What is included in the induction process?",
-        "How does the induction process work?",
-        "Can you explain the induction process?",
-        "What should I expect during induction?",
-        "What is the purpose of the induction process?",
-        "How long is the induction process?"
+        "What is PowerWork Solutions?",
+        "Tell me about the company",
+        "Where am I working?",
+        "What does PowerWork Solutions do?",
+        "What type of company is PowerWork?",
+        "Can you tell me more about the company?",
+        "What is the mission of PowerWork?",
+        "What are the values of PowerWork?"
       ],
       "responses": [
-        "The induction process at PowerWork is a half-day session aimed at familiarizing new joiners with the company's culture, policies, and key people. It includes an introduction to company values, policies, health & safety protocols, and an office tour.",
-        "During the induction process at PowerWork, new joiners are introduced to the company's culture, policies, and key personnel. The session lasts for half a day and includes an office tour.",
-        "Induction at PowerWork is a half-day session that covers company values, policies, health & safety protocols, and an introduction to key people. It helps new joiners get acquainted with the company.",
-        "The induction process at PowerWork involves a half-day session where new joiners learn about the company's culture, policies, and key individuals. It also includes an office tour and health & safety briefing.",
-        "At PowerWork, the induction process is designed to introduce new joiners to the company's culture, policies, and key personnel. This half-day session includes an overview of company values, health & safety protocols, and an office tour."
+        "Welcome to PowerWork Solutions! We are a software solutions provider focused on delivering innovative, scalable, and customized software solutions.",
+        "We focus on creating software that solves real-world challenges for our clients. Welcome aboard!"
+      ]
+    },
+    {
+      "tag": "induction_process",
+      "patterns": [
+        "What is the induction process?",
+        "What happens during my first few days?",
+        "Tell me about the onboarding process",
+        "What should I expect in the first week?",
+        "What do I need to do on the first day?",
+        "Can you tell me about the company’s induction process?",
+        "What will happen in my first few days at PowerWork?",
+        "Will I get an introduction to the team?"
+      ],
+      "responses": [
+        "The induction process includes company orientation, systems and tools overview, and department-specific onboarding to help you integrate smoothly into your role.",
+        "Onboarding includes an overview of our company culture, tools, and role-specific training."
       ]
     },
     {
@@ -92,23 +96,362 @@
       "patterns": [
         "What is the probation period?",
         "How long is the probation period?",
-        "Probation period details",
-        "Can you explain the probation period?",
         "What happens during the probation period?",
-        "Duration of the probation period",
-        "How does the probation period work?",
-        "What is the length of the probation period?",
-        "Probation period information",
-        "Details about the probation period"
+        "What will happen after the probation period?",
+        "How is my performance evaluated during probation?",
+        "Tell me about the probation review process",
+        "Is there a performance review after probation?",
+        "When does the probation period end?"
       ],
       "responses": [
-        "The probation period at PowerWork lasts for six months from the date of joining. During this time, new joiners undergo monthly performance reviews with feedback from team leads and HR. Confirmation of employment is based on satisfactory performance throughout the probation.",
-        "At PowerWork, the probation period is six months long. New joiners receive monthly performance reviews and feedback from team leads and HR. Employment confirmation depends on satisfactory performance during this period.",
-        "PowerWork's probation period spans six months from the joining date. It includes monthly performance reviews with feedback from team leads and HR. Successful completion of probation is required for employment confirmation.",
-        "The six-month probation period at PowerWork involves monthly performance reviews and feedback from team leads and HR. Employment confirmation is contingent on satisfactory performance throughout this period.",
-        "During the six-month probation period at PowerWork, new joiners undergo monthly performance reviews with feedback from team leads and HR. Employment is confirmed based on satisfactory performance during probation."
+        "Your probation period lasts for three months. You will receive regular performance reviews to ensure you're settling into your role successfully.",
+        "The probation period includes feedback sessions at 30, 60, and 90 days."
       ]
-    }, {
+    },
+    {
+      "tag": "training_and_development",
+      "patterns": [
+        "What training will I receive?",
+        "Tell me about the training program",
+        "How will my skills be developed?",
+        "What kind of training does PowerWork offer?",
+        "Will I receive training on the tools I’ll use?",
+        "What training resources are available?",
+        "What is the onboarding training schedule?",
+        "How long will the training take?"
+      ],
+      "responses": [
+        "You will receive comprehensive training in internal systems, role-specific tools, and ongoing professional development opportunities.",
+        "Training includes both general company tools and role-specific training tailored to your department."
+      ]
+    },
+    {
+      "tag": "department_allocation",
+      "patterns": [
+        "What department will I work in?",
+        "How do I know which department I'm in?",
+        "Which department am I allocated to?",
+        "How are departments divided at PowerWork?",
+        "Can I choose my department?",
+        "Which department am I assigned to based on my skills?",
+        "Tell me about the departments at PowerWork."
+      ],
+      "responses": [
+        "You will be allocated to one of the following departments based on your expertise: Software Development, Project Management, Sales and Marketing, Customer Support, QA, or HR.",
+        "Departments include Software Development, Project Management, Sales and Marketing, Customer Support, QA, and HR."
+      ]
+    },
+    {
+      "tag": "working_hours",
+      "patterns": [
+        "What are the working hours?",
+        "What time do I need to start work?",
+        "Tell me about working hours and schedules",
+        "What are the working hours at PowerWork?",
+        "When do I need to arrive at the office?",
+        "Is there flexibility in working hours?",
+        "What is the lunch break policy?"
+      ],
+      "responses": [
+        "Standard working hours are from 9:00 AM to 6:00 PM, Monday to Friday, with a 1-hour lunch break between 12:00 PM and 2:00 PM. Flexible working hours are available.",
+        "You can choose to start your workday between 8:00 AM to 10:00 AM as long as you fulfill the required 40 hours per week."
+      ]
+    },
+    {
+      "tag": "laptop_and_hardware",
+      "patterns": [
+        "Will I get a laptop?",
+        "What equipment will I receive?",
+        "How do I get hardware for work?",
+        "What happens if I need extra hardware?",
+        "How do I request additional hardware?",
+        "What kind of laptop will I get?",
+        "Is the laptop pre-configured with necessary software?",
+        "Can I request specific hardware?"
+      ],
+      "responses": [
+        "You will be issued a high-performance laptop pre-configured with the necessary software. Additional hardware requests can be made via HR or IT support.",
+        "The IT department will ensure all required software is installed and configured on your laptop."
+      ]
+    },
+    {
+      "tag": "key_contacts",
+      "patterns": [
+        "Who can I contact for support?",
+        "Who do I reach out to for help?",
+        "Where can I find the key contacts?",
+        "Who is the HR manager?",
+        "How do I contact IT support?",
+        "Who is responsible for training?",
+        "Where can I get help with technical issues?"
+      ],
+      "responses": [
+        "Here are some key contacts: HR - Sarah Adams, IT Support - Jake Turner, Training Coordinator - Emma Scott, Department Managers.",
+        "For HR queries, reach out to Sarah Adams at sarah.adams@powerWork.com."
+      ]
+    },
+    {
+      "tag": "policies_and_procedures",
+      "patterns": [
+        "What are the company policies?",
+        "What is the code of conduct?",
+        "What are the confidentiality rules?",
+        "Tell me about the leave policy",
+        "How do I request time off?",
+        "What should I do if I need to take a sick day?",
+        "What happens if I violate company policies?",
+        "How do I request additional software or hardware?"
+      ],
+      "responses": [
+        "Employees must follow the company's Code of Conduct, confidentiality agreements, and leave policies. You are entitled to 32 paid leaves annually, including 6 sick and 10 casual leaves.",
+        "Leave requests should be submitted through the HR portal at least two weeks in advance, except for emergencies."
+      ]
+    },
+    {
+      "tag": "faqs",
+      "patterns": [
+        "How do I request time off?",
+        "How do I request hardware?",
+        "What should I do if I encounter technical issues?",
+        "What do I do if I have a question about my role?",
+        "How can I get more information on policies?",
+        "Where can I get answers to common questions?",
+        "How can I request a leave?",
+        "Who can help me with issues not covered in the induction?"
+      ],
+      "responses": [
+        "To request time off, use the HR portal. For hardware requests, contact HR. If you encounter technical issues, contact IT Support.",
+        "For questions about your role or department, reach out to your direct manager."
+      ]
+    },
+    {
+      "tag": "laptop_and_hardware_requests",
+      "patterns": [
+        "How do I request additional hardware?",
+        "Can I get an extra monitor?",
+        "What if I need more than one monitor?",
+        "Can I request a different keyboard or mouse?",
+        "Who do I contact for hardware requests?",
+        "Can I upgrade my laptop?",
+        "How do I get more hardware if needed?"
+      ],
+      "responses": [
+        "For additional hardware requests, please contact HR or the IT department. They will help you with the process.",
+        "You can request extra hardware from the IT department or HR, depending on your role and department needs."
+      ]
+    },
+    {
+      "tag": "remote_work",
+      "patterns": [
+        "Can I work remotely?",
+        "Can I work from home?",
+        "Is remote work an option?",
+        "is work work from home an option?",
+        "How does the remote work policy work?",
+        "How does the work from home policy work?",
+        "When can I work from home?",
+        "Are there any guidelines for remote work?",
+        "Are there any guidelines for work from home?",
+        "What is the company policy on working from home?",
+        "Is remote work or work from home available?",
+        "Do we have a remote work or work from home policy?"
+      ],
+      "responses": [
+        "Remote work is available depending on your department and role. Please discuss with your manager for approval.",
+        "Check with your department head to clarify remote work arrangements specific to your role.",
+        "Remote work options are available depending on your department and the specific tasks at hand. Please speak with your manager to clarify expectations.",
+        "Remote work may be an option based on your department and role. Discuss with your manager for more details."
+      ]
+    },
+    {
+      "tag": "key_contacts",
+      "patterns": [
+        "Who are the key contacts?",
+        "Who can I reach out to for support?",
+        "Tell me about the key people in the company",
+        "How do I contact HR or IT support?"
+      ],
+      "responses": [
+        "Here are the key contacts to help you settle into your role:",
+        "• HR Department: \n  Name: Sarah Adams \n  Email: sarah.adams@powerWork.com \n  Role: HR Manager \n  Available: Monday to Friday, 9:00 AM to 6:00 PM",
+        "• IT Support: \n  Name: Jake Turner \n  Email: jake.turner@powerWork.com \n  Role: IT Specialist \n  Available: Monday to Friday, 9:00 AM to 5:00 PM",
+        "• Training Coordinator: \n  Name: Emma Scott \n  Email: emma.scott@powerWork.com \n  Role: Training and Development Lead \n  Available: Monday to Friday, 9:00 AM to 5:00 PM",
+        "• Manager - Software Development: \n  Name: David Lee \n  Email: david.lee@powerWork.com \n  Role: Software Development Manager \n  Available: Monday to Friday, 9:00 AM to 6:00 PM",
+        "• Manager - Project Management: \n  Name: Lisa Morgan \n  Email: lisa.morgan@powerWork.com \n  Role: Project Management Manager \n  Available: Monday to Friday, 9:00 AM to 6:00 PM"
+      ]
+    },
+    {
+      "tag": "hr_contact",
+      "patterns": [
+        "How do I contact HR?",
+        "Who is the HR manager?",
+        "I need to contact HR",
+        "Give me the contact details for HR"
+      ],
+      "responses": [
+        "You can contact Sarah Adams, the HR Manager, at sarah.adams@powerWork.com. She is available Monday to Friday from 9:00 AM to 6:00 PM.",
+        "For HR inquiries, you can reach Sarah Adams via email at sarah.adams@powerWork.com, available during regular business hours."
+      ]
+    },
+    {
+      "tag": "it_support_contact",
+      "patterns": [
+        "Whom should I contact for IT Asset acquisition?",
+        "Who can help me with my laptop?",
+        "How can I contact IT support?",
+        "Who should I reach out to for technical issues?",
+        "I have a technical problem, who do I contact?",
+        "Give me the contact details for IT support"
+      ],
+      "responses": [
+        "You can contact Jake Turner, our IT Specialist, at jake.turner@powerWork.com. He is available Monday to Friday, 9:00 AM to 5:00 PM.",
+        "For technical issues, reach out to Jake Turner at jake.turner@powerWork.com. He will assist you with troubleshooting and support."
+      ]
+    },
+    {
+      "tag": "training_coordinator_contact",
+      "patterns": [
+        "Who is the training coordinator?",
+        "How do I contact the training coordinator?",
+        "I need to speak with the training coordinator",
+        "Give me the contact details for the training coordinator"
+      ],
+      "responses": [
+        "You can reach Emma Scott, the Training and Development Lead, at emma.scott@powerWork.com. She is available Monday to Friday from 9:00 AM to 5:00 PM.",
+        "For training-related queries, contact Emma Scott at emma.scott@powerWork.com. She is available to assist you during business hours."
+      ]
+    },
+    {
+      "tag": "software_development_manager_contact",
+      "patterns": [
+        "Who is the software development manager?",
+        "How do I contact the software development manager?",
+        "I need to talk to the software development manager",
+        "Give me the contact details for the software development manager"
+      ],
+      "responses": [
+        "You can contact David Lee, the Software Development Manager, at david.lee@powerWork.com. He is available Monday to Friday from 9:00 AM to 6:00 PM.",
+        "For anything related to software development, reach out to David Lee at david.lee@powerWork.com. He will assist you during business hours."
+      ]
+    },
+    {
+      "tag": "project_management_manager_contact",
+      "patterns": [
+        "Who is the project management manager?",
+        "How can I contact the project management manager?",
+        "Give me the contact details for the project management manager",
+        "I need to reach the project management manager"
+      ],
+      "responses": [
+        "You can contact Lisa Morgan, the Project Management Manager, at lisa.morgan@powerWork.com. She is available Monday to Friday from 9:00 AM to 6:00 PM.",
+        "For project management inquiries, contact Lisa Morgan at lisa.morgan@powerWork.com. She is available during business hours to assist you."
+      ]
+    },
+    {
+      "tag": "laptop_provision",
+      "patterns": [
+        "Will I get a laptop?",
+        "What kind of laptop will I receive?",
+        "Do I get a laptop on the first day?",
+        "What laptop will be provided?"
+      ],
+      "responses": [
+        "Yes, you'll receive a high-performance laptop on your first day. It will be pre-configured with all the necessary software and tools for your role.",
+        "On your first day, a high-performance laptop will be provided, ready with all required software and tools."
+      ]
+    },
+    {
+      "tag": "hardware_requests",
+      "patterns": [
+        "Can I request additional hardware?",
+        "How do I request extra hardware?",
+        "I need additional hardware, how do I get it?",
+        "Where can I request extra hardware like a monitor?"
+      ],
+      "responses": [
+        "You can request additional hardware such as a monitor, keyboard, or mouse through the HR department or directly from IT Support.",
+        "For extra hardware like a monitor or mouse, please contact HR or IT Support to place your request."
+      ]
+    },
+    {
+      "tag": "software_installations",
+      "patterns": [
+        "Who installs the software on my laptop?",
+        "What software will be installed on my laptop?",
+        "Will the required software be installed on my laptop?",
+        "How do I get the software I need?"
+      ],
+      "responses": [
+        "The IT department will ensure that all required software, such as development tools, collaboration platforms, and security software, are installed and configured on your laptop.",
+        "All necessary software for your role will be pre-installed by the IT department on your laptop."
+      ]
+    },
+    {
+      "tag": "it_support",
+      "patterns": [
+        "How do I get IT support?",
+        "What should I do if my laptop isn't working?",
+        "I have a technical issue, who can I contact?",
+        "How do I reach IT support for issues?"
+      ],
+      "responses": [
+        "For any technical issues related to hardware or software, please contact the IT support team at itsupport@powerWork.com.",
+        "If you encounter any technical issues, reach out to IT Support at itsupport@powerWork.com for troubleshooting, repairs, or upgrades."
+      ]
+    },
+    {
+      "tag": "standard_working_hours",
+      "patterns": [
+        "What are the working hours?",
+        "What time do I need to work?",
+        "When is the workday scheduled?",
+        "What are the standard working hours?"
+      ],
+      "responses": [
+        "The standard working hours are Monday to Friday, 9:00 AM to 6:00 PM, with a 40-hour workweek.",
+        "Your workday will be from 9:00 AM to 6:00 PM, Monday through Friday, with a total of 40 hours each week."
+      ]
+    },
+    {
+      "tag": "flexible_working_hours",
+      "patterns": [
+        "Do I have flexible working hours?",
+        "Can I choose my work start time?",
+        "What are the flexible working hours?",
+        "Is there flexibility in my work schedule?"
+      ],
+      "responses": [
+        "Yes, you can choose to start your workday between 8:00 AM to 10:00 AM, as long as you complete your required 40 hours per week.",
+        "You have the option to start your workday anytime between 8:00 AM and 10:00 AM, as long as you meet your weekly work hours."
+      ]
+    },
+    {
+      "tag": "lunch_break",
+      "patterns": [
+        "How long is my lunch break?",
+        "When can I take my lunch break?",
+        "What time is lunch?",
+        "How do I schedule my lunch break?"
+      ],
+      "responses": [
+        "You are entitled to a 1-hour lunch break, which can be taken anytime between 12:00 PM and 2:00 PM.",
+        "You can take your lunch break for 1 hour anytime between 12:00 PM and 2:00 PM."
+      ]
+    },
+    {
+      "tag": "overtime_policy",
+      "patterns": [
+        "Is overtime allowed?",
+        "Will I be compensated for overtime?",
+        "How is overtime handled?",
+        "What happens if I work overtime?"
+      ],
+      "responses": [
+        "If overtime is required, it will be compensated according to company policy, either through paid time off or additional compensation.",
+        "Overtime will be compensated as per the company's policy, either with paid time off or extra compensation."
+      ]
+    },
+    {
       "tag": "training",
       "patterns": [
         "Tell me about the training",
@@ -172,138 +515,6 @@
         "Following the probation period, new joiners at PowerWork are allocated to their designated departments. Each department has a designated onboarding mentor to help with role-specific knowledge transfer.",
         "After completing the probation period, new joiners at PowerWork are placed in their designated departments. Each department has an onboarding mentor to assist with role-specific knowledge transfer.",
         "New joiners at PowerWork are allocated to their designated departments after the probation period. Each department has a designated onboarding mentor to help with role-specific knowledge transfer."
-      ]
-    },
-    {
-      "tag": "casual_leave",
-      "patterns": [
-        "Tell me about casual leave",
-        "What is casual leave?",
-        "Casual leave details",
-        "How many casual leaves do I get?",
-        "What is the casual leave policy?",
-        "Number of casual leaves allowed",
-        "Explain casual leave",
-        "Details about casual leave",
-        "How does casual leave work?",
-        "What are casual leaves?"
-      ],
-      "responses": [
-        "Casual Leave (CL) at PowerWork is 12 days per year. It is used for personal matters or unforeseen events. Note that CL cannot be combined with Sick Leave.",
-        "At PowerWork, employees are entitled to 12 days of Casual Leave (CL) per year. This leave is intended for personal matters or unforeseen events and cannot be combined with Sick Leave.",
-        "PowerWork provides 12 days of Casual Leave (CL) per year for personal matters or unforeseen events. Please note that Casual Leave cannot be combined with Sick Leave.",
-        "Employees at PowerWork receive 12 days of Casual Leave (CL) annually. This leave is for personal matters or unforeseen events and cannot be combined with Sick Leave.",
-        "Casual Leave (CL) at PowerWork allows employees 12 days per year for personal matters or unforeseen events. It cannot be combined with Sick Leave."
-      ]
-    },
-    {
-      "tag": "sick_leave",
-      "patterns": [
-        "Tell me about sick leave",
-        "What is sick leave?",
-        "Sick leave details",
-        "How many sick leaves do I get?",
-        "What is the sick leave policy?",
-        "Number of sick leaves allowed",
-        "Explain sick leave",
-        "Details about sick leave",
-        "How does sick leave work?",
-        "What are sick leaves?"
-      ],
-      "responses": [
-        "Sick Leave (SL) at PowerWork is 8 days per year. It is used when an employee is unwell and cannot attend work. Medical proof is required if the absence extends beyond two days.",
-        "At PowerWork, employees are entitled to 8 days of Sick Leave (SL) per year. This leave is for when an employee is unwell and unable to attend work. Medical proof is required if the absence extends beyond two days.",
-        "PowerWork provides 8 days of Sick Leave (SL) per year for employees who are unwell and cannot attend work. Medical proof is needed if the absence is longer than two days.",
-        "Employees at PowerWork receive 8 days of Sick Leave (SL) annually. This leave is for when they are unwell and unable to work. Medical proof is required for absences longer than two days.",
-        "Sick Leave (SL) at PowerWork allows employees 8 days per year for illness. If the absence extends beyond two days, medical proof is required."
-      ]
-    },
-    {
-      "tag": "earned_leave",
-      "patterns": [
-        "Tell me about earned leave",
-        "What is earned leave?",
-        "Earned leave details",
-        "How many earned leaves do I get?",
-        "What is the earned leave policy?",
-        "Number of earned leaves allowed",
-        "Explain earned leave",
-        "Details about earned leave",
-        "How does earned leave work?",
-        "What are earned leaves?"
-      ],
-      "responses": [
-        "Earned Leave (EL) at PowerWork is 15 days per year, accrued monthly. It is used for planned vacations or personal commitments and must be requested at least two weeks in advance.",
-        "At PowerWork, employees are entitled to 15 days of Earned Leave (EL) per year, accrued monthly. This leave is for planned vacations or personal commitments and must be requested at least two weeks in advance.",
-        "PowerWork provides 15 days of Earned Leave (EL) per year, accrued monthly. This leave is intended for planned vacations or personal commitments and must be requested at least two weeks in advance.",
-        "Employees at PowerWork receive 15 days of Earned Leave (EL) annually, accrued monthly. This leave is for planned vacations or personal commitments and must be requested at least two weeks in advance.",
-        "Earned Leave (EL) at PowerWork allows employees 15 days per year, accrued monthly, for planned vacations or personal commitments. It must be requested at least two weeks in advance."
-      ]
-    },
-    {
-      "tag": "maternity_leave",
-      "patterns": [
-        "Tell me about maternity leave",
-        "What is maternity leave?",
-        "Maternity leave details",
-        "How many maternity leaves do I get?",
-        "What is the maternity leave policy?",
-        "Number of maternity leaves allowed",
-        "Explain maternity leave",
-        "Details about maternity leave",
-        "How does maternity leave work?",
-        "What are maternity leaves?"
-      ],
-      "responses": [
-        "Maternity Leave at PowerWork is 26 weeks, applicable to female employees. It requires a doctor's certificate and is applicable only after one year of service.",
-        "At PowerWork, female employees are entitled to 26 weeks of Maternity Leave. This leave requires a doctor's certificate and is applicable only after one year of service.",
-        "PowerWork provides 26 weeks of Maternity Leave for female employees. A doctor's certificate is required, and the leave is applicable only after one year of service.",
-        "Female employees at PowerWork receive 26 weeks of Maternity Leave. This leave requires a doctor's certificate and is applicable only after one year of service.",
-        "Maternity Leave at PowerWork allows female employees 26 weeks of leave. It requires a doctor's certificate and is applicable only after one year of service."
-      ]
-    },
-    {
-      "tag": "paternity_leave",
-      "patterns": [
-        "Tell me about paternity leave",
-        "What is paternity leave?",
-        "Paternity leave details",
-        "How many paternity leaves do I get?",
-        "What is the paternity leave policy?",
-        "Number of paternity leaves allowed",
-        "Explain paternity leave",
-        "Details about paternity leave",
-        "How does paternity leave work?",
-        "What are paternity leaves?"
-      ],
-      "responses": [
-        "Paternity Leave at PowerWork is 5 days. It applies to male employees and must be taken within two weeks of the birth.",
-        "At PowerWork, male employees are entitled to 5 days of Paternity Leave. This leave must be taken within two weeks of the birth.",
-        "PowerWork provides 5 days of Paternity Leave for male employees. This leave must be taken within two weeks of the birth.",
-        "Male employees at PowerWork receive 5 days of Paternity Leave. This leave must be taken within two weeks of the birth.",
-        "Paternity Leave at PowerWork allows male employees 5 days of leave. It must be taken within two weeks of the birth."
-      ]
-    },
-    {
-      "tag": "leave_terms",
-      "patterns": [
-        "Tell me about leave terms",
-        "What are the leave terms?",
-        "Leave terms details",
-        "Explain the leave terms",
-        "Details about leave terms",
-        "What are the terms for leave?",
-        "How do leave terms work?",
-        "What are the conditions for leave?",
-        "Leave terms and conditions",
-        "What are the rules for leave?"
-      ],
-      "responses": [
-        "Leave balances at PowerWork are reset at the start of each calendar year. Employees must update their reporting managers before availing any leave. Unused leaves may not be carried forward, except for Earned Leave, which has a carry-forward limit of up to 10 days. Unauthorized absence may result in disciplinary action.",
-        "At PowerWork, leave balances are reset at the start of each calendar year. Employees must inform their reporting managers before taking any leave. Unused leaves cannot be carried forward, except for Earned Leave, which has a carry-forward limit of up to 10 days. Unauthorized absence may lead to disciplinary action.",
-        "PowerWork resets leave balances at the start of each calendar year. Employees need to update their reporting managers before taking leave. Unused leaves may not be carried forward, except for Earned Leave, which can be carried forward up to 10 days. Unauthorized absence may result in disciplinary action.",
-        "Leave balances at PowerWork are reset annually at the start of the calendar year. Employees must notify their reporting managers before availing any leave. Unused leaves cannot be carried forward, except for Earned Leave, which can be carried forward up to 10 days. Unauthorized absence may result in disciplinary action.",
-        "At PowerWork, leave balances reset at the beginning of each calendar year. Employees must update their reporting managers before taking leave. Unused leaves may not be carried forward, except for Earned Leave, which has a carry-forward limit of up to 10 days. Unauthorized absence may lead to disciplinary action."
       ]
     },
     {
@@ -549,28 +760,6 @@
       ]
     },
     {
-      "tag": "points_of_contact",
-      "patterns": [
-        "Who are the points of contact?",
-        "Points of contact details",
-        "Tell me about the points of contact",
-        "Can you provide points of contact information?",
-        "Who should I contact for queries?",
-        "Details about points of contact",
-        "Points of contact list",
-        "Who are the key points of contact?",
-        "Points of contact information",
-        "Who to contact for support?"
-      ],
-      "responses": [
-        "The points of contact at PowerWork include key personnel across various departments who are responsible for specific functions and can be approached for related queries and support. For HR queries, contact Anna Peterson (HR Manager) at hr@powerwork.com. For IT support, contact John Smith (IT Specialist) at it-support@powerwork.com. For Finance queries, contact Priya Kannan (Finance Assistant) at finance@powerwork.com. For general inquiries, contact the Support Team at support@powerwork.com.",
-        "PowerWork's points of contact include key personnel across various departments responsible for specific functions. For HR queries, contact Anna Peterson (HR Manager) at hr@powerwork.com. For IT support, contact John Smith (IT Specialist) at it-support@powerwork.com. For Finance queries, contact Priya Kannan (Finance Assistant) at finance@powerwork.com. For general inquiries, contact the Support Team at support@powerwork.com.",
-        "The points of contact at PowerWork include key personnel across various departments responsible for specific functions. For HR queries, contact Anna Peterson (HR Manager) at hr@powerwork.com. For IT support, contact John Smith (IT Specialist) at it-support@powerwork.com. For Finance queries, contact Priya Kannan (Finance Assistant) at finance@powerwork.com. For general inquiries, contact the Support Team at support@powerwork.com.",
-        "At PowerWork, the points of contact include key personnel across various departments responsible for specific functions. For HR queries, contact Anna Peterson (HR Manager) at hr@powerwork.com. For IT support, contact John Smith (IT Specialist) at it-support@powerwork.com. For Finance queries, contact Priya Kannan (Finance Assistant) at finance@powerwork.com. For general inquiries, contact the Support Team at support@powerwork.com.",
-        "PowerWork's points of contact include key personnel across various departments responsible for specific functions. For HR queries, contact Anna Peterson (HR Manager) at hr@powerwork.com. For IT support, contact John Smith (IT Specialist) at it-support@powerwork.com. For Finance queries, contact Priya Kannan (Finance Assistant) at finance@powerwork.com. For general inquiries, contact the Support Team at support@powerwork.com."
-      ]
-    },
-    {
       "tag": "wfh_furniture_overview",
       "patterns": [
         "Tell me about the WFH furniture policy",
@@ -635,7 +824,283 @@
         "At PowerWork, the terms and conditions for WFH furniture include eligibility criteria (minimum six months of service), exclusive use for work-related purposes, ownership remaining with PowerWork, and responsibilities for minor repairs, with major maintenance costs covered by the company.",
         "PowerWork's WFH furniture terms and conditions include eligibility criteria (minimum six months of service), exclusive use for work-related purposes, ownership remaining with PowerWork, and responsibilities for minor repairs, with major maintenance costs covered by the company."
       ]
+    },
+    {
+      "tag": "leave_policy_introduction",
+      "patterns": [
+        "What is the leave policy?",
+        "Explain the leave policy of the company",
+        "Can you describe the leave policy?",
+        "Tell me about the leave policy"
+      ],
+      "responses": [
+        "The leave policy outlines guidelines for employee leaves, ensuring consistency and compliance with labor laws while prioritizing well-being. It applies to all full-time, part-time, and contractual employees."
+      ]
+    },
+    {
+      "tag": "leave_types",
+      "patterns": [
+        "What types of leaves are available?",
+        "How many types of leaves are there?",
+        "Tell me about the leave types",
+        "What are the different leave categories?",
+        "How many leaves I can take?"
+      ],
+      "responses": [
+        "The types of leaves include: Paid Leave (32 days annually), Sick Leave (6 days), Casual Leave (10 days), Earned/Annual Leave, Unpaid Leave, and Special Leave (e.g., maternity, paternity, bereavement)."
+      ]
+    },
+    {
+      "tag": "paid_leave",
+      "patterns": [
+        "What is paid leave?",
+        "How many paid leave days do I get?",
+        "Explain paid leave",
+        "Details about paid leave"
+      ],
+      "responses": [
+        "Paid leave includes 32 days annually, divided into 6 sick leaves and 10 casual leaves. Remaining days can be used as earned leave, subject to approval."
+      ]
+    },
+    {
+      "tag": "sick_leave",
+      "patterns": [
+        "What is sick leave?",
+        "How many sick leaves are there?",
+        "Explain the sick leave policy",
+        "What is the rule for sick leave?"
+      ],
+      "responses": [
+        "Sick leave is for illnesses or medical needs. Employees are entitled to up to 6 days annually. A medical certificate is required for absences exceeding 2 days."
+      ]
+    },
+    {
+      "tag": "casual_leave",
+      "patterns": [
+        "What is casual leave?",
+        "How many casual leaves are there?",
+        "Explain casual leave policy",
+        "What are casual leaves used for?"
+      ],
+      "responses": [
+        "Casual leave is for personal emergencies or short-term needs. Employees are entitled to up to 10 days annually."
+      ]
+    },
+    {
+      "tag": "special_leave",
+      "patterns": [
+        "What is special leave?",
+        "Explain special leave",
+        "How does special leave work?",
+        "What leaves are considered special?"
+      ],
+      "responses": [
+        "Special leave includes maternity, paternity, bereavement, or marriage leave. Maternity and paternity leave durations are specified by company policy."
+      ]
+    },
+    {
+      "tag": "leave_entitlement",
+      "patterns": [
+        "What is the leave entitlement?",
+        "How does leave accrual work?",
+        "Explain leave accrual and entitlement",
+        "How is leave entitlement calculated?"
+      ],
+      "responses": [
+        "Leave is calculated on a pro-rata basis for new employees. Unused leave may be carried forward up to a specified limit or encashed as per policy."
+      ]
+    },
+    {
+      "tag": "leave_application",
+      "patterns": [
+        "How to apply for leave?",
+        "What is the leave application process?",
+        "How do I submit a leave request?",
+        "Explain the leave application procedure"
+      ],
+      "responses": [
+        "Submit a leave request via the company portal or HR system, providing details like dates, leave type, and reason. For emergencies, notify the manager immediately via email or phone."
+      ]
+    },
+    {
+      "tag": "leave_approval",
+      "patterns": [
+        "How is leave approved?",
+        "What is the leave approval process?",
+        "Who approves leave requests?",
+        "Explain the approval procedure for leave"
+      ],
+      "responses": [
+        "Leave requests are reviewed by the reporting manager. Decisions are communicated within a specified time, and employees must ensure task handover before leave."
+      ]
+    },
+    {
+      "tag": "leave_rules",
+      "patterns": [
+        "What are the leave rules?",
+        "Explain the rules about leaves",
+        "Are there rules for taking leave?",
+        "What happens if I take excessive leave?"
+      ],
+      "responses": [
+        "Excessive leave without approval may lead to disciplinary action. Employees must ensure their absence does not disrupt project deadlines. Paid leave is not a substitute for resignations."
+      ]
+    },
+    {
+      "tag": "amendments",
+      "patterns": [
+        "Can the leave policy be changed?",
+        "Are there updates to the leave policy?",
+        "What happens if the leave policy is amended?",
+        "Explain policy amendments"
+      ],
+      "responses": [
+        "The leave policy may be updated periodically. Employees will be notified of any changes via email and the company portal."
+      ]
+    },
+    {
+      "tag": "leave_policy_faqs",
+      "patterns": [
+        "What if I exceed my paid leave limit?",
+        "Can unused casual leave be encashed?",
+        "How soon should I apply for leave?",
+        "Explain common questions about leave"
+      ],
+      "responses": [
+        "1. Excess leave is treated as unpaid leave.\n2. Encashment of unused leave depends on company policy.\n3. For planned leaves, apply at least two weeks in advance."
+      ]
+    },
+    {
+      "tag": "leave_carryover",
+      "patterns": [
+        "Can I carry over unused leave?",
+        "What happens to unused leave?",
+        "Is leave carried forward?",
+        "Can unused leave be carried to the next year?"
+      ],
+      "responses": [
+        "Unused leave can be carried forward up to a specified limit. Excess leave beyond that may lapse unless encashment is allowed."
+      ]
+    },
+    {
+      "tag": "emergency_leave",
+      "patterns": [
+        "What if I need leave for an emergency?",
+        "How to apply for emergency leave?",
+        "Is there a policy for emergencies?",
+        "Can I take immediate leave for emergencies?"
+      ],
+      "responses": [
+        "For emergencies, notify your reporting manager immediately via email or phone. Submit a formal request as soon as possible."
+      ]
+    },
+    {
+      "tag": "maternity_leave",
+      "patterns": [
+        "How much maternity leave can I take?",
+        "What is the maternity leave policy?",
+        "Explain maternity leave",
+        "Are there special provisions for maternity?"
+      ],
+      "responses": [
+        "Maternity leave is provided as per company policy and local labor laws. The specific duration will depend on the regulations in your region."
+      ]
+    },
+    {
+      "tag": "paternity_leave",
+      "patterns": [
+        "How much paternity leave can I take?",
+        "What is the paternity leave policy?",
+        "Explain paternity leave",
+        "Is paternity leave available?"
+      ],
+      "responses": [
+        "Paternity leave is available for new fathers. The specific duration will depend on company policy and local labor laws."
+      ]
+    },
+    {
+      "tag": "unpaid_leave",
+      "patterns": [
+        "What is unpaid leave?",
+        "Can I take leave without pay?",
+        "Explain unpaid leave",
+        "When can I use unpaid leave?"
+      ],
+      "responses": [
+        "Unpaid leave is applicable when paid leave is exhausted. It requires approval from your reporting manager and should be used for unavoidable circumstances."
+      ]
+    },
+    {
+      "tag": "leave_encashment",
+      "patterns": [
+        "Can I encash unused leave?",
+        "What is leave encashment?",
+        "Can I get paid for unused leave?",
+        "Explain the encashment policy for leave"
+      ],
+      "responses": [
+        "Leave encashment depends on company policy. Generally, unused leave within a specific limit may be encashed or carried forward to the next year."
+      ]
+    },
+    {
+      "tag": "holidays_vs_leave",
+      "patterns": [
+        "What is the difference between holidays and leave?",
+        "Are public holidays considered as leave?",
+        "Do holidays reduce my leave balance?",
+        "Explain the relation between holidays and leave"
+      ],
+      "responses": [
+        "Public holidays do not count as leave. They are separate from your annual leave entitlement and do not reduce your leave balance."
+      ]
+    },
+    {
+      "tag": "probation_leave_policy",
+      "patterns": [
+        "Can I take leave during probation?",
+        "What is the leave policy for probationers?",
+        "Do probation employees get leave?",
+        "Explain leave rules during probation"
+      ],
+      "responses": [
+        "During probation, employees may have limited leave entitlement. Please refer to your employment contract or consult HR for specifics."
+      ]
+    },
+    {
+      "tag": "leave_balance_check",
+      "patterns": [
+        "How can I check my leave balance?",
+        "Where can I see my remaining leave days?",
+        "How do I know my leave balance?",
+        "Is there a way to view my leave status?"
+      ],
+      "responses": [
+        "You can check your leave balance on the company portal or HR system. Contact HR if you face any issues."
+      ]
+    },
+    {
+      "tag": "leave_planning",
+      "patterns": [
+        "How should I plan my leave?",
+        "What are tips for leave planning?",
+        "Can you guide me on leave planning?",
+        "How to schedule leave effectively?"
+      ],
+      "responses": [
+        "Plan leaves in advance, especially for annual or earned leave. Submit requests early and ensure task handover to avoid disruptions."
+      ]
+    },
+    {
+      "tag": "bereavement_leave",
+      "patterns": [
+        "What is bereavement leave?",
+        "Can I take leave for a family death?",
+        "What is the policy for bereavement leave?",
+        "How does bereavement leave work?"
+      ],
+      "responses": [
+        "Bereavement leave is provided for employees to grieve the loss of an immediate family member. Duration is subject to company policy."
+      ]
     }
   ]
 }
-

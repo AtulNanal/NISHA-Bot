@@ -1,6 +1,7 @@
 import sys
 import os
 from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 import random
 
@@ -9,6 +10,18 @@ import random
 
 # Now you can import your modules from folder 2
 from chat import get_response
+
+app = FastAPI()
+
+# Allow CORS from any origin (or specify the Unity app URL)
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # Allows all origins, you can specify your Unity build URL here
+    allow_credentials=True,
+    allow_methods=["*"],  # Allows all HTTP methods (GET, POST, etc.)
+    allow_headers=["*"],  # Allows all headers
+)
+
 
 app = FastAPI()
 
